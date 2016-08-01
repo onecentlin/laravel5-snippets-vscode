@@ -1,0 +1,105 @@
+{
+    "name": "laravel5-snippets",
+    "displayName": "Laravel 5 Snippets",
+    "description": "Laravel 5 Snippets",
+    "version": "1.0.0",
+    "publisher": "onecentlin",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/auth.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/cache.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/config.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/console.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/cookie.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/crypt.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/db.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/event.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/hash.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/helper.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/input.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/log.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/mail.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/redirect.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/relation.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/request.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/response.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/route.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/schema.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/session.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/storage.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/view.json"
+            }
+        ]
+    }
+}

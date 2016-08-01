@@ -1,0 +1,107 @@
+{
+    "Input-all.sublime-snippet": {
+        "prefix": "Input::all",
+        "body": [
+            "\\$request->all()"
+        ],
+        "description": "Retrieve all Inputs"
+    },
+    "Input-except.sublime-snippet": {
+        "prefix": "Input::except",
+        "body": [
+            "\\$request->except(${1:['key', 'otherKey']})$2"
+        ],
+        "description": "Retrieve only some of the Request Input"
+    },
+    "Input-exists.sublime-snippet": {
+        "prefix": "Input::has",
+        "body": [
+            "\\$request->exists('${1:key}')$2"
+        ],
+        "description": "Determine if the request contains a given input item key."
+    },
+    "Input-file.sublime-snippet": {
+        "prefix": "Input::file",
+        "body": [
+            "\\$request->file('${1:key}')$2"
+        ],
+        "description": "Retrieve Uploaded File"
+    },
+    "Input-fileMove.sublime-snippet": {
+        "prefix": "Input::fileMove",
+        "body": [
+            "\\$request->file('${1:key}')->move(${2:\\$destinationPath}, ${3:\\$fileName});$4"
+        ],
+        "description": "Move an Uploaded File"
+    },
+    "Input-flash.sublime-snippet": {
+        "prefix": "Input::flash",
+        "body": [
+            "\\$request->flash();"
+        ],
+        "description": "Flash Input to the Session"
+    },
+    "Input-flashExcept.sublime-snippet": {
+        "prefix": "Input::flashExcept",
+        "body": [
+            "\\$request->flashExcept(${1:['key', 'otherKey']})$2"
+        ],
+        "description": "Flash only some Input to the Session"
+    },
+    "Input-flashOnly.sublime-snippet": {
+        "prefix": "Input::flashOnly",
+        "body": [
+            "\\$request->flashOnly('${1:['key', 'otherKey']}')$2"
+        ],
+        "description": "Flash only some Input to the Session"
+    },
+    "Input-get.sublime-snippet": {
+        "prefix": "Input::get",
+        "body": [
+            "\\$request->input('${1:key}')$2"
+        ],
+        "description": "Retrieve an Input value"
+    },
+    "Input-getWithDefault.sublime-snippet": {
+        "prefix": "Input::getWithDefault",
+        "body": [
+            "\\$request->input('${1:key}', ${2:'default'})$3"
+        ],
+        "description": "Retrieve an Input value with Default"
+    },
+    "Input-has.sublime-snippet": {
+        "prefix": "Input::has",
+        "body": [
+            "\\$request->has('${1:key}')$2"
+        ],
+        "description": "Determine if the request contains a non-empty value for an input item."
+    },
+    "Input-hasFile.sublime-snippet": {
+        "prefix": "Input::hasFile",
+        "body": [
+            "\\$request->hasFile('${1:key}')$2"
+        ],
+        "description": "Determine if File was Uploaded"
+    },
+    "Input-old.sublime-snippet": {
+        "prefix": "Input::old",
+        "body": [
+            "\\$request->old('${1:key}')$2"
+        ],
+        "description": "Retrieve Old Data"
+    },
+    "Input-oldWithDefault.sublime-snippet": {
+        "prefix": "Input::oldWithDefault",
+        "body": [
+            "\\$request->old('${1:key}', ${2:'default'})$3"
+        ],
+        "description": "Retrieve Old Data with Default"
+    },
+    "Input-only.sublime-snippet": {
+        "prefix": "Input::only",
+        "body": [
+            "\\$request->only(${1:['key', 'otherKey']})$2"
+        ],
+        "description": "Retrieve only some of the Request Input"
+    }
+}

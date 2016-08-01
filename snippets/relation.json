@@ -1,0 +1,52 @@
+{
+    "Relation-belongsTo.sublime-snippet": {
+        "prefix": "Relation::belongsTo",
+        "body": [
+            "public function ${1:user}()",
+            "{",
+            "    return \\$this->belongsTo('${2:App\\User}'${3:, '${4:foreign_key}'}${5:, '${6:other_key}'});",
+            "}$7"
+        ],
+        "description": "A one-to-one inverse relationship."
+    },
+    "Relation-belongsToMany.sublime-snippet": {
+        "prefix": "Relation::belongsToMany",
+        "body": [
+            "public function ${1:roles}()",
+            "{",
+            "    return \\$this->belongsToMany('${2:App\\Role}'${3:, '${4:role_user_table}'}${5:, '${6:user_id}'}${7:, '${8:role_id}'});",
+            "}$9"
+        ],
+        "description": "A many-to-many relationship."
+    },
+    "Relation-hasMany.sublime-snippet": {
+        "prefix": "Relation::hasMany",
+        "body": [
+            "public function ${1:comments}()",
+            "{",
+            "    return \\$this->hasMany('${2:App\\Comment}'${3:, '${4:foreign_key}'}${5:, '${6:local_key}'});",
+            "}$7"
+        ],
+        "description": "A one-to-many relationship."
+    },
+    "Relation-hasManyThrough.sublime-snippet": {
+        "prefix": "Relation::hasManyThrough",
+        "body": [
+            "public function ${1:comments}()",
+            "{",
+            "    return \\$this->hasManyThrough('${2:App\\Comment}', ${3:App\\Post});",
+            "}$4"
+        ],
+        "description": "A Has Many Through relationship."
+    },
+    "Relation-hasOne.sublime-snippet": {
+        "prefix": "Relation::hasOne",
+        "body": [
+            "public function ${1:user}()",
+            "{",
+            "    return \\$this->hasOne('${2:App\\User}'${3:, '${4:foreign_key}'}${5:, '${6:local_key}'});",
+            "}$7"
+        ],
+        "description": "A one-to-one relationship."
+    }
+}

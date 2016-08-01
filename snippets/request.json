@@ -1,0 +1,255 @@
+{
+    "Relation-belongsTo.sublime-snippet": {
+        "prefix": "Relation::belongsTo",
+        "body": [
+            "public function ${1:user}()",
+            "{",
+            "    return \\$this->belongsTo('${2:App\\User}'${3:, '${4:foreign_key}'}${5:, '${6:other_key}'});",
+            "}$7"
+        ],
+        "description": "A one-to-one inverse relationship."
+    },
+    "Relation-belongsToMany.sublime-snippet": {
+        "prefix": "Relation::belongsToMany",
+        "body": [
+            "public function ${1:roles}()",
+            "{",
+            "    return \\$this->belongsToMany('${2:App\\Role}'${3:, '${4:role_user_table}'}${5:, '${6:user_id}'}${7:, '${8:role_id}'});",
+            "}$9"
+        ],
+        "description": "A many-to-many relationship."
+    },
+    "Relation-hasMany.sublime-snippet": {
+        "prefix": "Relation::hasMany",
+        "body": [
+            "public function ${1:comments}()",
+            "{",
+            "    return \\$this->hasMany('${2:App\\Comment}'${3:, '${4:foreign_key}'}${5:, '${6:local_key}'});",
+            "}$7"
+        ],
+        "description": "A one-to-many relationship."
+    },
+    "Relation-hasManyThrough.sublime-snippet": {
+        "prefix": "Relation::hasManyThrough",
+        "body": [
+            "public function ${1:comments}()",
+            "{",
+            "    return \\$this->hasManyThrough('${2:App\\Comment}', ${3:App\\Post});",
+            "}$4"
+        ],
+        "description": "A Has Many Through relationship."
+    },
+    "Relation-hasOne.sublime-snippet": {
+        "prefix": "Relation::hasOne",
+        "body": [
+            "public function ${1:user}()",
+            "{",
+            "    return \\$this->hasOne('${2:App\\User}'${3:, '${4:foreign_key}'}${5:, '${6:local_key}'});",
+            "}$7"
+        ],
+        "description": "A one-to-one relationship."
+    },
+    "Request-ajax.sublime-snippet": {
+        "prefix": "Request::ajax",
+        "body": [
+            "\\$request->ajax()"
+        ],
+        "description": "Determine if the request is the result of an AJAX call."
+    },
+    "Request-all.sublime-snippet": {
+        "prefix": "Request::all",
+        "body": [
+            "\\$request->all()"
+        ],
+        "description": "Get all of the input and files for the request."
+    },
+    "Request-allFiles.sublime-snippet": {
+        "prefix": "Request::allFiles",
+        "body": [
+            "\\$request->allFiles()"
+        ],
+        "description": "Get an array of all of the files on the request."
+    },
+    "Request-decodedPath.sublime-snippet": {
+        "prefix": "Request::decodedPath",
+        "body": [
+            "\\$request->decodedPath()"
+        ],
+        "description": "Get the current encoded path info for the request."
+    },
+    "Request-except.sublime-snippet": {
+        "prefix": "Request::except",
+        "body": [
+            "\\$request->except(${1:['key', 'otherKey']})$2"
+        ],
+        "description": "Get all of the input except for a specified array of items."
+    },
+    "Request-exists.sublime-snippet": {
+        "prefix": "Request::exists",
+        "body": [
+            "\\$request->exists(${1:'key'})$2"
+        ],
+        "description": "Determine if the request contains a given input item key."
+    },
+    "Request-file.sublime-snippet": {
+        "prefix": "Request::file",
+        "body": [
+            "\\$request->file(${1:'key'}${2:, 'default'})$2"
+        ],
+        "description": "Retrieve a file from the request."
+    },
+    "Request-fingerprint.sublime-snippet": {
+        "prefix": "Request::fingerprint",
+        "body": [
+            "\\$request->fingerprint()"
+        ],
+        "description": "Get a unique fingerprint for the request / route / IP address."
+    },
+    "Request-fullUrl.sublime-snippet": {
+        "prefix": "Request::fullRrl",
+        "body": [
+            "\\$request->fullUrl()"
+        ],
+        "description": "Get the full URL for the request."
+    },
+    "Request-has.sublime-snippet": {
+        "prefix": "Request::has",
+        "body": [
+            "\\$request->has(${1:'key'})$2"
+        ],
+        "description": "Determine if the request contains a non-empty value for an input item."
+    },
+    "Request-hasFile.sublime-snippet": {
+        "prefix": "Request::has",
+        "body": [
+            "\\$request->has(${1:'key'})$2"
+        ],
+        "description": "Determine if the uploaded data contains a file."
+    },
+    "Request-header.sublime-snippet": {
+        "prefix": "Request::header",
+        "body": [
+            "\\$request->header(${1:'key'}, '${2:default'})$3"
+        ],
+        "description": "Retrieve a header from the request."
+    },
+    "Request-input.sublime-snippet": {
+        "prefix": "Request::input",
+        "body": [
+            "\\$request->input(${1:'key'}${2:, 'default'})$3"
+        ],
+        "description": "Retrieve an input item from the request."
+    },
+    "Request-ip.sublime-snippet": {
+        "prefix": "Request::ip",
+        "body": [
+            "\\$request->ip()"
+        ],
+        "description": "Returns the client IP address."
+    },
+    "Request-ips.sublime-snippet": {
+        "prefix": "Request::ips",
+        "body": [
+            "\\$request->ips()"
+        ],
+        "description": "Returns the client IP addresses."
+    },
+    "Request-json.sublime-snippet": {
+        "prefix": "Request::json",
+        "body": [
+            "\\$request->json()"
+        ],
+        "description": "Determine if the request is sending JSON."
+    },
+    "Request-method.sublime-snippet": {
+        "prefix": "Request::method",
+        "body": [
+            "\\$request->method();"
+        ],
+        "description": "Get the request method (GET, POST, ...)."
+    },
+    "Request-old.sublime-snippet": {
+        "prefix": "Request::old",
+        "body": [
+            "\\$request->old(${1:'key'}${2:, 'default'})$3"
+        ],
+        "description": "Retrieve an old input item."
+    },
+    "Request-only.sublime-snippet": {
+        "prefix": "Request::only",
+        "body": [
+            "\\$request->only(${1:['key', 'otherKey']})$2"
+        ],
+        "description": "Get a subset of the items from the input data."
+    },
+    "Request-path.sublime-snippet": {
+        "prefix": "Request::path",
+        "body": [
+            "\\$request->path()"
+        ],
+        "description": "Get the current path info for the request."
+    },
+    "Request-pjax.sublime-snippet": {
+        "prefix": "Request::pjax",
+        "body": [
+            "\\$request->pjax()"
+        ],
+        "description": "Determine if the request is the result of an PJAX call."
+    },
+    "Request-query.sublime-snippet": {
+        "prefix": "Request::query",
+        "body": [
+            "\\$request->query(${1:'key'}, '${2:default'})$3"
+        ],
+        "description": "Retrieve a query string item from the request."
+    },
+    "Request-root.sublime-snippet": {
+        "prefix": "Request::root",
+        "body": [
+            "\\$request->root()"
+        ],
+        "description": "Get the root URL for the application."
+    },
+    "Request-secure.sublime-snippet": {
+        "prefix": "Request::secure",
+        "body": [
+            "\\$request->secure()"
+        ],
+        "description": "Determine if the request is over HTTPS."
+    },
+    "Request-segment.sublime-snippet": {
+        "prefix": "Request::segment",
+        "body": [
+            "\\$request->segment(${1:\\$index}, '${2:default}')$3"
+        ],
+        "description": "Get a segment from the URI (1 based index)."
+    },
+    "Request-segments.sublime-snippet": {
+        "prefix": "Request::segments",
+        "body": [
+            "\\$request->segments()"
+        ],
+        "description": "Get all of the segments for the request path."
+    },
+    "Request-session.sublime-snippet": {
+        "prefix": "Request::session",
+        "body": [
+            "\\$request->session()"
+        ],
+        "description": "Get the session associated with the request."
+    },
+    "Request-url.sublime-snippet": {
+        "prefix": "Request::url",
+        "body": [
+            "\\$request->url()"
+        ],
+        "description": "Get the URL (no query string) for the request."
+    },
+    "Request-user.sublime-snippet": {
+        "prefix": "Request::user",
+        "body": [
+            "\\$request->user()"
+        ],
+        "description": "Get the user making the request."
+    }
+}
