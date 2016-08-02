@@ -9,6 +9,10 @@
         "email": "onecentlin@gmail.com",
         "url": "https://devmanna.blogspot.com"
     },
+    "homepage": "https://github.com/onecentlin/laravel5-snippets-vscode",
+    "bugs": {
+        "url": "https://github.com/onecentlin/laravel5-snippets-vscode/issues"
+    },
     "engines": {
         "vscode": "^1.0.0"
     },
