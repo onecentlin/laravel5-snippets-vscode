@@ -2,7 +2,7 @@
     "Request-method.sublime-snippet": {
         "prefix": "Request::method",
         "body": [
-            "\\$request->method();"
+            "\\$request->method()"
         ],
         "description": "Get the request method (GET, POST, ...)."
     },
@@ -114,23 +114,16 @@
     "Request-exists.sublime-snippet": {
         "prefix": "Request::exists",
         "body": [
-            "\\$request->exists(${1:'key'})$2"
+            "\\$request->exists('${1:key}')$2"
         ],
         "description": "Determine if the request contains a given input item key."
     },
     "Request-has.sublime-snippet": {
         "prefix": "Request::has",
         "body": [
-            "\\$request->has(${1:'key'})$2"
+            "\\$request->has('${1:key}')$2"
         ],
         "description": "Determine if the request contains a non-empty value for an input item."
-    },
-    "Request-isEmptyString": {
-        "prefix": "Request::isEmptyString",
-        "body": [
-            "\\$request->isEmptyString(${1:'key'})$2"
-        ],
-        "description": "Determine if the given input key is an empty string for \"has\"."
     },
     "Request-all.sublime-snippet": {
         "prefix": "Request::all",
@@ -142,7 +135,7 @@
     "Request-input.sublime-snippet": {
         "prefix": "Request::input",
         "body": [
-            "\\$request->input(${1:'key'}${2:, 'default'})$3"
+            "\\$request->input('${1:key}'${2:, 'default'})$3"
         ],
         "description": "Retrieve an input item from the request."
     },
@@ -170,21 +163,21 @@
     "Request-query.sublime-snippet": {
         "prefix": "Request::query",
         "body": [
-            "\\$request->query(${1:'key'}, '${2:default'})$3"
+            "\\$request->query('${1:key}', '${2:default'})$3"
         ],
         "description": "Retrieve a query string item from the request."
     },
     "Request-hasCookie": {
         "prefix": "Request::hasCookie",
         "body": [
-            "\\$request->hasCookie(${1:'key'})$2"
+            "\\$request->hasCookie('${1:key}')$2"
         ],
         "description": "Determine if a cookie is set on the request."
     },
     "Request-cookie": {
         "prefix": "Request::cookie",
         "body": [
-            "\\$request->cookie(${1:'key'}, '${2:default'})$3"
+            "\\$request->cookie('${1:key}', '${2:default'})$3"
         ],
         "description": "Retrieve a cookie from the request."
     },
@@ -195,17 +188,10 @@
         ],
         "description": "Get an array of all of the files on the request."
     },
-    "Request-convertUploadedFiles": {
-        "prefix": "Request::convertUploadedFiles",
-        "body": [
-            "\\$request->convertUploadedFiles(${1:\\$files})$2"
-        ],
-        "description": "Convert the given array of Symfony UploadedFiles to custom Laravel UploadedFiles."
-    },
     "Request-file.sublime-snippet": {
         "prefix": "Request::file",
         "body": [
-            "\\$request->file(${1:'key'}${2:, 'default'})$2"
+            "\\$request->file('${1:key}'${2:, 'default'})$2"
         ],
         "description": "Retrieve a file from the request."
     },
@@ -215,13 +201,6 @@
             "\\$request->hasFile('${1:key}')$2"
         ],
         "description": "Determine if the uploaded data contains a file."
-    },
-    "Request-isValidFile": {
-        "prefix": "Request::isValidFile",
-        "body": [
-            "\\$request->isValidFile(${1:\\$file})$2"
-        ],
-        "description": "Check that the given file is a valid file instance."
     },
     "Request-hasHeader": {
         "prefix": "Request::hasHeader",
@@ -261,30 +240,23 @@
     "Input-flashOnly.sublime-snippet": {
         "prefix": "Request::flashOnly",
         "body": [
-            "\\$request->flashOnly('${1:\\$keys}')$2"
+            "\\$request->flashOnly(${1:\\$keys});$2"
         ],
         "description": "Flash only some Input to the Session"
     },
     "Input-flashExcept.sublime-snippet": {
         "prefix": "Request::flashExcept",
         "body": [
-            "\\$request->flashExcept(${1:\\$keys})$2"
+            "\\$request->flashExcept(${1:\\$keys});$2"
         ],
         "description": "Flash only some Input to the Session"
     },
     "Request-flush": {
         "prefix": "Request::flush",
         "body": [
-            "\\$request->flush()"
+            "\\$request->flush();"
         ],
         "description": "Flush all of the old input from the session."
-    },
-    "Request-retrieveItem": {
-        "prefix": "Request::retrieveItem",
-        "body": [
-            "\\$request->retrieveItem('${1:source}', '${2:key}', ${3:\\$default})$4"
-        ],
-        "description": "Retrieve a parameter item from a given source."
     },
     "Request-merge": {
         "prefix": "Request::merge",
@@ -306,20 +278,6 @@
             "\\$request->json()"
         ],
         "description": "Determine if the request is sending JSON."
-    },
-    "Request-getInputSource": {
-        "prefix": "Request::getInputSource",
-        "body": [
-            "\\$request->getInputSource()"
-        ],
-        "description": "Get the input source for the request."
-    },
-    "Request-matchesType": {
-        "prefix": "Request::matchesType",
-        "body": [
-            "\\$request->matchesType('${1:actual}', '${2:type}')$3"
-        ],
-        "description": "Determine if the given content types match."
     },
     "Request-isJson": {
         "prefix": "Request::isJson",
@@ -376,20 +334,6 @@
             "\\$request->bearerToken()"
         ],
         "description": "Get the bearer token from the request headers."
-    },
-    "Request-createFromBase": {
-        "prefix": "Request::createFromBase",
-        "body": [
-            "\\$request->createFromBase(${1:\\$request})$2"
-        ],
-        "description": "Create an Illuminate request from a Symfony instance."
-    },
-    "Request-duplicate": {
-        "prefix": "Request::duplicate",
-        "body": [
-            "\\$request->duplicate(${1:\\$query}, ${2:\\$request}, ${3:\\$attributes}, ${4:\\$cookies}, ${5:\\$files}, ${6:\\$server})$7"
-        ],
-        "description": "Create an Illuminate request from a Symfony instance."
     },
     "Request-session.sublime-snippet": {
         "prefix": "Request::session",
@@ -465,14 +409,14 @@
     "Request-offsetSet": {
         "prefix": "Request::offsetSet",
         "body": [
-            "\\$request->offsetSet('${1:offset}', ${2:\\$value})$3"
+            "\\$request->offsetSet('${1:offset}', ${2:\\$value});$3"
         ],
         "description": "Set the value at the given offset."
     },
     "Request-offsetUnset": {
         "prefix": "Request::offsetUnset",
         "body": [
-            "\\$request->offsetUnset('${1:offset}')$2"
+            "\\$request->offsetUnset('${1:offset}');$2"
         ],
         "description": "Remove the value at the given offset."
     }
