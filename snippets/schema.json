@@ -4,7 +4,7 @@
         "body": [
             "Schema::connection('${1:foo}')->create('${2:users}', function(${3:\\$table}) {",
             "    \\$table->increments('${4:id}');$5",
-            "});"
+            "});$6"
         ],
         "description": "Specify connection for schema operation"
     },
@@ -12,9 +12,9 @@
         "prefix": "Schema::create-table",
         "body": [
             "Schema::create('${1:users}', function (Blueprint \\$table) {",
-            "    \\$table->increments('${3:id}');",
-            "    $2",
-            "});"
+            "    \\$table->increments('${2:id}');",
+            "    $3",
+            "});$4"
         ],
         "description": "Create new table"
     },
@@ -37,7 +37,7 @@
         "body": [
             "if (Schema::hasColumn('${1:table}', '${2:column}')) {",
             "    $3",
-            "}"
+            "}$4"
         ],
         "description": "Check for existence of column(s)"
     },
@@ -46,7 +46,7 @@
         "body": [
             "if (Schema::hasTable('${1:table}')) {",
             "    $2",
-            "}"
+            "}$3"
         ],
         "description": "Check for existence of table"
     },
@@ -62,7 +62,7 @@
         "body": [
             "Schema::table('${1:users}', function(\\$table) {",
             "    $3",
-            "});"
+            "});$4"
         ],
         "description": "Update an existing table"
     },

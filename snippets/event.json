@@ -2,7 +2,7 @@
     "Event-createClassListener.sublime-snippet": {
         "prefix": "Event::createClassListener",
         "body": [
-            "Event::createClassListener(${1:listener})$2"
+            "Event::createClassListener(${1:listener});$2"
         ],
         "description": "Create a class based listener using the IoC container."
     },
@@ -16,7 +16,7 @@
     "Event-firing.sublime-snippet": {
         "prefix": "Event::firing",
         "body": [
-            "Event::firing()"
+            "Event::firing();"
         ],
         "description": "Get the event that is currently firing."
     },
@@ -79,7 +79,7 @@
     "Event-until.sublime-snippet": {
         "prefix": "Event::until",
         "body": [
-            "Event::until(${1:event}, ${2:payload})$3"
+            "Event::until(${1:event}, ${2:payload});$3"
         ],
         "description": "Fire an event until the first non-null response is returned."
     }

@@ -53,14 +53,14 @@
         "body": [
             "DB::transaction(function () {",
             "    $1",
-            "});"
+            "});$2"
         ],
         "description": "Execute a Closure within a transaction."
     },
     "DB-update.sublime-snippet": {
         "prefix": "DB::update",
         "body": [
-            "DB::update(${1:'update users set votes = 100 where name = ?'}${2:, ['John']})$3"
+            "DB::update(${1:'update users set votes = 100 where name = ?'}${2:, ['John']});$3"
         ],
         "description": "Run an update statement against the database."
     }

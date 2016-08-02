@@ -9,7 +9,7 @@
     "Cookie-get.sublime-snippet": {
         "prefix": "Cookie::get",
         "body": [
-            "\\$request->cookie('${1:key}')$2"
+            "\\$request->cookie('${1:key}');$2"
         ],
         "description": "Retrieve a Cookie value"
     },

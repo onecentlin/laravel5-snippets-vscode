@@ -23,7 +23,7 @@
     "Redirect-to.sublime-snippet": {
         "prefix": "Redirect::to",
         "body": [
-            "return redirect('${1:some/url}')$2"
+            "return redirect('${1:some/url}');$2"
         ],
         "description": "Redirect to URL, Route or Controller"
     },

@@ -6,7 +6,7 @@
             "    ${1:\\$decrypted} = Crypt::decrypt(${2:\\$encryptedValue});",
             "} catch (Illuminate\\Contracts\\Encryption\\DecryptException $e) {",
             "    $3",
-            "}"
+            "}$4"
         ],
         "description": "Decrypt a value"
     },

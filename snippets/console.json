@@ -16,7 +16,7 @@
     "Command-choice.sublime-snippet": {
         "prefix": "Console::choice",
         "body": [
-            "\\$this->choice('${1:What is your name?', ['Taylor', 'Dayle'], false});$2"
+            "\\$this->choice('${1:Question?}', [${2'Choice1', 'Choice2'}], ${3:\\$default});$4"
         ],
         "description": "Give the user a predefined set of choices"
     },
@@ -30,7 +30,7 @@
     "Command-confirm.sublime-snippet": {
         "prefix": "",
         "body": [
-            "\\$this->confirm('${1:Do you wish to continue? [y|N]}');$2"
+            "\\$this->confirm('${1:Do you wish to continue? [Y|N]}');$2"
         ],
         "description": "Logs a confirmation prompt to the console"
     },
@@ -51,7 +51,7 @@
     "Command-line.sublime-snippet": {
         "prefix": "Console::line",
         "body": [
-            "\\$this->line('${1:Display this on the screen}');$22"
+            "\\$this->line('${1:Display this on the screen}');$2"
         ],
         "description": "Log plain information to the console"
     },
