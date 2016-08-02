@@ -56,6 +56,15 @@
         ],
         "description": "Basic Get Route."
     },
+    "Router-post.sublime-snippet": {
+        "prefix": "Route::post",
+        "body": [
+            "Route::post('${1:users/\\{id\\}}', function(${2:$id}) {",
+            "    $3",
+            "});"
+        ],
+        "description": "Basic Post Route."
+    },
     "Route-group.sublime-snippet": {
         "prefix": "Route::group",
         "body": [
@@ -98,26 +107,17 @@
         "description": "Pattern based filters on routes"
     },
     "Router-model.sublime-snippet": {
-        "prefix": "Router::model",
+        "prefix": "Route::model",
         "body": [
             "\\$router->model('${1:user}', '${2:App\\User}')$3"
         ],
         "description": "Register a model binder for a wildcard."
     },
     "Router-pattern.sublime-snippet": {
-        "prefix": "Router::pattern",
+        "prefix": "Route::pattern",
         "body": [
             "\\$router->pattern('${1:id}', '${2:[0-9]+}')$3"
         ],
         "description": "Set a global where pattern on all routes."
-    },
-    "Router-post.sublime-snippet": {
-        "prefix": "Route::post",
-        "body": [
-            "Route::post('${1:users/\\{id\\}}', function(${2:$id}) {",
-            "    $3",
-            "});"
-        ],
-        "description": "Basic Post Route."
     }
 }
