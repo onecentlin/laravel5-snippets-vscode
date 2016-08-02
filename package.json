@@ -1,11 +1,25 @@
 {
     "name": "laravel5-snippets",
     "displayName": "Laravel 5 Snippets",
-    "description": "Laravel 5 Snippets",
+    "description": "Laravel 5 Snippets for Visual Studio Code.",
     "version": "1.0.0",
     "publisher": "onecentlin",
+    "author": {
+        "name": "Winnie Lin",
+        "email": "onecentlin@gmail.com",
+        "url": "https://devmanna.blogspot.com"
+    },
     "engines": {
         "vscode": "^1.0.0"
+    },
+    "keywords": [
+        "laravel",
+        "snippets"
+    ],
+    "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#f66f62",
+        "theme": "dark"
     },
     "categories": [
         "Snippets"
@@ -51,10 +65,6 @@
             {
                 "language": "php",
                 "path": "./snippets/helper.json"
-            },
-            {
-                "language": "php",
-                "path": "./snippets/input.json"
             },
             {
                 "language": "php",
