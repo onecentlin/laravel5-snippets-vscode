@@ -2,6 +2,10 @@
 
 Laravel 5 Snippets for Visual Studio Code.
 
+## Screenshot
+
+![Screenshot](https://github.com/onecentlin/laravel5-snippets-vscode/raw/master/images/screenshot.gif)
+
 ## Installation
 
 * Launch VS Code Quick Open (Ctrl+P), paste the following command `ext install laravel5-snippets`, and press enter.
