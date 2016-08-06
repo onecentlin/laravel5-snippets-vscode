@@ -117,5 +117,59 @@
             "});$19"
         ],
         "description": "Send a new message using a view."
+    },
+
+    // 5.3
+
+    "Mail-to": {
+        "prefix": "Mail::to",
+        "body": [
+            "Mail::to(${1:\\$request->user()})->send(new ${2:MailableClass});$3"
+        ],
+        "description": "Mail with Mailable - mailer will automatically use collection 'email' and 'name' properties"
+    },
+    "Mail-to-more": {
+        "prefix": "Mail::to-more",
+        "body": [
+            "Mail::to(${1:\\$request->user()})",
+            "    ->cc(${2:\\$moreUsers})",
+            "    ->bcc(${3:\\$evenMoreUsers})",
+            "    ->send(new ${4:MailableClass});$5"
+        ],
+        "description": "Mail with Mailable - mail to more recipients"
+    },
+    "Mail-queue-mailable": {
+        "prefix": "Mail::queue-mailable",
+        "body": [
+            "Mail::to(${1:\\$request->user()})",
+            "    ->cc(${2:\\$moreUsers})",
+            "    ->bcc(${3:\\$evenMoreUsers})",
+            "    ->queue(new ${4:MailableClass});$5"
+        ],
+        "description": "Mail with Mailable - Queueing A Mail Message"
+    },
+    "Mail-later-mailable": {
+        "prefix": "Mail::later-mailable",
+        "body": [
+            "Mail::to(${1:\\$request->user()})",
+            "    ->cc(${2:\\$moreUsers})",
+            "    ->bcc(${3:\\$evenMoreUsers})",
+            "    ->later(${4:\\$when}, new ${5:MailableClass});$6"
+        ],
+        "description": "Mail with Mailable - Delayed Message Queueing"
+    },
+
+    // Mailable
+
+    "Mailable-build-config": {
+        "prefix": "Mailable::build-config",
+        "body": [
+            "return $this->from('${1:example@example.com}')",
+            "    ->${2:view}('${3:mails.viewName}')",
+            "    ->with([",
+            "            ${4:'orderName' => $this->order->name,}",
+            "     ]);$5"
+        ],
+        "description": "Mailable - Configuring Mailable build()"
     }
 }

@@ -6,6 +6,11 @@ Laravel 5 Snippets for Visual Studio Code.
 
 ![Screenshot](https://github.com/onecentlin/laravel5-snippets-vscode/raw/master/images/screenshot.gif)
 
+## What's New in 1.2
+
+* Support Laravel 5.3 Mailable
+* Add Route::group-middleware
+
 ## Installation
 
 * Launch VS Code Quick Open (Ctrl+P), paste the following command `ext install laravel5-snippets`, and press enter.
@@ -28,7 +33,7 @@ Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 * Hash
 * Helper
 * Log
-* Mail
+* Mail - Contains `Mail::` and `Mailable::` prefix for mail related settings
 * Redirect
 * Relation
 * Request

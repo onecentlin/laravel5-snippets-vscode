@@ -74,6 +74,15 @@
         ],
         "description": "Create a Group of Routes"
     },
+    "Route-group-middleware": {
+        "prefix": "Route::group-middleware",
+        "body": [
+            "Route::group(['middleware' => ['${1:groupName}']], function() {",
+            "    ${2://}",
+            "});"
+        ],
+        "description": "Create a Group of Routers with middleware defined in RouteServiceProvider"
+    },
     "Route-match.sublime-snippet": {
         "prefix": "Route::match",
         "body": [
