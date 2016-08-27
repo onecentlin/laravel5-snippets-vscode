@@ -1,15 +1,15 @@
 # Laravel 5 Snippets
 
-Laravel 5 Snippets for Visual Studio Code.
+Laravel 5 snippets for Visual Studio Code.
 
 ## Screenshot
 
 ![Screenshot](https://github.com/onecentlin/laravel5-snippets-vscode/raw/master/images/screenshot.gif)
 
-## What's New in 1.2
+## What's New in 1.3
 
-* Support Laravel 5.3 Mailable
-* Add Route::group-middleware
+* Support new snippets for Laravel 5.3 API Authentication ([Passport](https://laravel.com/docs/5.3/passport))
+* Add missing support in Authentication: `Auth::guard`, `Auth::attempt`, `Auth::login`, `Auth::loginUsingId`, `Auth::viaRemember`, `Auth::routes`
 
 ## Installation
 
@@ -34,6 +34,7 @@ Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 * Helper
 * Log
 * Mail - Contains `Mail::` and `Mailable::` prefix for mail related settings
+* Passport (Laravel v5.3 - [API Authentication](https://laravel.com/docs/5.3/passport))
 * Redirect
 * Relation
 * Request
