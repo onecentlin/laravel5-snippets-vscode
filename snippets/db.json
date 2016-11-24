@@ -63,5 +63,12 @@
             "DB::update(${1:'update users set votes = 100 where name = ?'}${2:, ['John']});$3"
         ],
         "description": "Run an update statement against the database."
+    },
+    "DB-table": {
+        "prefix": "DB::table",
+        "body": [
+            "DB::table('${1:users}')$2"
+        ],
+        "description": "Retrieving rows from a table"
     }
 }

@@ -1,20 +1,10 @@
 # Laravel 5 Snippets
 
-Laravel 5 snippets for Visual Studio Code.
+[`Laravel 5 snippets` extension](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets) for Visual Studio Code.
 
 ## Screenshot
 
 ![Screenshot](https://github.com/onecentlin/laravel5-snippets-vscode/raw/master/images/screenshot.gif)
-
-## What's New in 1.3
-
-* Support new snippets for Laravel 5.3 API Authentication ([Passport](https://laravel.com/docs/5.3/passport))
-* Add missing support in Authentication: `Auth::guard`, `Auth::attempt`, `Auth::login`, `Auth::loginUsingId`, `Auth::viaRemember`, `Auth::routes`
-
-## Installation
-
-* Launch VS Code Quick Open (Ctrl+P), paste the following command `ext install laravel5-snippets`, and press enter.
-* Open Extension Panel: search `Laravel 5 Snippets` and install
 
 ## Usage
 
@@ -45,7 +35,7 @@ Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 * Storage
 * View
 
-> Blade - Please install `Laravel Blade Snippets` [extension](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade) for blade syntax highlighting and better support with blade and emmet.
+> Blade - Please install [`Laravel Blade Snippets` extension](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade) for blade syntax highlighting and better support with blade and emmet.
 
 ## Contact
 
