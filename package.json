@@ -2,7 +2,7 @@
     "name": "laravel5-snippets",
     "displayName": "Laravel 5 Snippets",
     "description": "Laravel 5 snippets for Visual Studio Code",
-    "version": "1.3.1",
+    "version": "1.3.2",
     "publisher": "onecentlin",
     "author": {
         "name": "Winnie Lin",
@@ -10,6 +10,10 @@
         "url": "https://devmanna.blogspot.com"
     },
     "homepage": "https://github.com/onecentlin/laravel5-snippets-vscode",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/onecentlin/laravel5-snippets-vscode"
+    },
     "bugs": {
         "url": "https://github.com/onecentlin/laravel5-snippets-vscode/issues"
     },

@@ -1,3 +1,8 @@
+## 1.3.2
+
+* Add `$table->timestamps();` as defualt fields while creating table schema. ([#2](https://github.com/onecentlin/laravel5-snippets-vscode/issues/2))
+* Fix snippets stop position.
+
 ## 1.3.1
 
 * Add missing support in DB: `DB::table` ([#1](https://github.com/onecentlin/laravel5-snippets-vscode/issues/1))
