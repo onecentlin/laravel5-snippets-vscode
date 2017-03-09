@@ -63,7 +63,7 @@
     "Schema-table-update.sublime-snippet": {
         "prefix": "Schema::table-update",
         "body": [
-            "Schema::table('${1:users}', function(\\$table) {",
+            "Schema::table('${1:users}', function(Blueprint \\$table) {",
             "    $0",
             "});"
         ],
