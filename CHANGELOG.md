@@ -1,3 +1,7 @@
+## 1.3.3
+
+* Added `Blueprint` type check to table update snippet. ([@thelfensdrfer](https://github.com/thelfensdrfer) - [PR #3](https://github.com/onecentlin/laravel5-snippets-vscode/pull/3))
+
 ## 1.3.2
 
 * Add `$table->timestamps();` as defualt fields while creating table schema. ([#2](https://github.com/onecentlin/laravel5-snippets-vscode/issues/2))
