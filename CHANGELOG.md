@@ -1,3 +1,8 @@
+## 1.3.4
+
+* Fix syntax for PSR2 ([@tradzero](https://github.com/tradzero) - [PR #4](https://github.com/onecentlin/laravel5-snippets-vscode/pull/4))
+* Fix `Route` syntax issues.
+
 ## 1.3.3
 
 * Added `Blueprint` type check to table update snippet. ([@thelfensdrfer](https://github.com/thelfensdrfer) - [PR #3](https://github.com/onecentlin/laravel5-snippets-vscode/pull/3))

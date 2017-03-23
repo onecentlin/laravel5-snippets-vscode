@@ -2,8 +2,8 @@
     "Route-any.sublime-snippet": {
         "prefix": "Route::any",
         "body": [
-            "Route::any('${2:users/{id\\}}', function (${3:$$id}) {",
-            "    ${4://}",
+            "Route::any('${2:users/{id\\}}', function (${3:\\$id}) {",
+            "    $4",
             "});"
         ],
         "description": "Basic Route with Closure."
@@ -11,8 +11,8 @@
     "Route-closure.sublime-snippet": {
         "prefix": "Route::closure",
         "body": [
-            "Route::${1:get}('${2:users/{id\\}}', function (${3:$$id}) {",
-            "    ${4://}",
+            "Route::${1:get}('${2:users/{id\\}}', function (${3:\\$id}) {",
+            "    $4",
             "});"
         ],
         "description": "Basic Route with Closure."
@@ -27,7 +27,7 @@
     "Route-controllerAction.sublime-snippet": {
         "prefix": "Route::controllerAction",
         "body": [
-            "Route::${1:get}('${2:users/\\{id\\}}', '${3:$UserController@profile}');"
+            "Route::${1:get}('${2:users/{id\\}}', '${3:$UserController@profile}');"
         ],
         "description": "Basic route to a controller action."
     },
@@ -41,8 +41,8 @@
     "Route-delete.sublime-snippet": {
         "prefix": "Route::delete",
         "body": [
-            "Route::delete('${1:users/{id\\}}', function (${2:$$id}) {",
-            "    ${3://}",
+            "Route::delete('${1:users/{id\\}}', function (${2:\\$id}) {",
+            "    $3",
             "});"
         ],
         "description": "Basic Delete Route."
@@ -50,8 +50,8 @@
     "Route-get.sublime-snippet": {
         "prefix": "Route::get",
         "body": [
-            "Route::get('${1:users/{id\\}}', function (${2:$$id}) {",
-            "    ${3://}",
+            "Route::get('${1:users/{id\\}}', function (${2:\\$id}) {",
+            "    $3",
             "});"
         ],
         "description": "Basic Get Route."
@@ -59,7 +59,7 @@
     "Router-post.sublime-snippet": {
         "prefix": "Route::post",
         "body": [
-            "Route::post('${1:users/{id\\}}', function (${2:$$id}) {",
+            "Route::post('${1:users/{id\\}}', function (${2:\\$id}) {",
             "    $3",
             "});"
         ],
@@ -69,7 +69,7 @@
         "prefix": "Route::group",
         "body": [
             "Route::group(${1:['${2:prefix}' => '${3:admin}']}, function () {",
-            "    ${4://}",
+            "    $4",
             "});"
         ],
         "description": "Create a Group of Routes"
@@ -78,7 +78,7 @@
         "prefix": "Route::group-middleware",
         "body": [
             "Route::group(['middleware' => ['${1:groupName}']], function () {",
-            "    ${2://}",
+            "    $2",
             "});"
         ],
         "description": "Create a Group of Routers with middleware defined in RouteServiceProvider"
@@ -87,7 +87,7 @@
         "prefix": "Route::match",
         "body": [
             "Route::match([${1:'get', 'post'}], '${2:/user/profile}', function () {",
-            "    ${3://}",
+            "    $3",
             "});"
         ],
         "description": "Register a new route with the given verbs."
@@ -95,8 +95,8 @@
     "Route-put.sublime-snippet": {
         "prefix": "Route::put",
         "body": [
-            "Route::put('${1:users/{id\\}}', function (${2:$$id}) {",
-            "    ${3://}",
+            "Route::put('${1:users/{id\\}}', function (${2:\\$id}) {",
+            "    $3",
             "});"
         ],
         "description": "Basic Put Route."
