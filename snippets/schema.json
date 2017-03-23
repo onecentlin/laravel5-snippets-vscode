@@ -4,7 +4,7 @@
     "Schema-connection.sublime-snippet": {
         "prefix": "Schema::connection",
         "body": [
-            "Schema::connection('${1:foo}')->create('${2:users}', function(${3:\\$table}) {",
+            "Schema::connection('${1:foo}')->create('${2:users}', function (${3:\\$table}) {",
             "    \\$table->increments('id');$0",
             "});"
         ],
@@ -63,7 +63,7 @@
     "Schema-table-update.sublime-snippet": {
         "prefix": "Schema::table-update",
         "body": [
-            "Schema::table('${1:users}', function(Blueprint \\$table) {",
+            "Schema::table('${1:users}', function (Blueprint \\$table) {",
             "    $0",
             "});"
         ],

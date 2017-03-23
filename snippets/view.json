@@ -2,7 +2,7 @@
     "View-composer.sublime-snippet": {
         "prefix": "View::composer",
         "body": [
-            "view()->composer('${1:name}', function(${2:\\$view}) {",
+            "view()->composer('${1:name}', function (${2:\\$view}) {",
             "    $3",
             "});"
         ],

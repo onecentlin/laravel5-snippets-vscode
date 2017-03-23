@@ -2,7 +2,7 @@
     "Route-any.sublime-snippet": {
         "prefix": "Route::any",
         "body": [
-            "Route::any('${2:users/\\{id\\}}', function(${3:$id}) {",
+            "Route::any('${2:users/{id\\}}', function (${3:$$id}) {",
             "    ${4://}",
             "});"
         ],
@@ -11,7 +11,7 @@
     "Route-closure.sublime-snippet": {
         "prefix": "Route::closure",
         "body": [
-            "Route::${1:get}('${2:users/\\{id\\}}', function(${3:$id}) {",
+            "Route::${1:get}('${2:users/{id\\}}', function (${3:$$id}) {",
             "    ${4://}",
             "});"
         ],
@@ -41,7 +41,7 @@
     "Route-delete.sublime-snippet": {
         "prefix": "Route::delete",
         "body": [
-            "Route::delete('${1:users/\\{id\\}}', function(${2:$id}) {",
+            "Route::delete('${1:users/{id\\}}', function (${2:$$id}) {",
             "    ${3://}",
             "});"
         ],
@@ -50,7 +50,7 @@
     "Route-get.sublime-snippet": {
         "prefix": "Route::get",
         "body": [
-            "Route::get('${1:users/\\{id\\}}', function(${2:$id}) {",
+            "Route::get('${1:users/{id\\}}', function (${2:$$id}) {",
             "    ${3://}",
             "});"
         ],
@@ -59,7 +59,7 @@
     "Router-post.sublime-snippet": {
         "prefix": "Route::post",
         "body": [
-            "Route::post('${1:users/\\{id\\}}', function(${2:$id}) {",
+            "Route::post('${1:users/{id\\}}', function (${2:$$id}) {",
             "    $3",
             "});"
         ],
@@ -68,7 +68,7 @@
     "Route-group.sublime-snippet": {
         "prefix": "Route::group",
         "body": [
-            "Route::group(${1:['${2:prefix}' => '${3:admin}']}, function() {",
+            "Route::group(${1:['${2:prefix}' => '${3:admin}']}, function () {",
             "    ${4://}",
             "});"
         ],
@@ -77,7 +77,7 @@
     "Route-group-middleware": {
         "prefix": "Route::group-middleware",
         "body": [
-            "Route::group(['middleware' => ['${1:groupName}']], function() {",
+            "Route::group(['middleware' => ['${1:groupName}']], function () {",
             "    ${2://}",
             "});"
         ],
@@ -86,7 +86,7 @@
     "Route-match.sublime-snippet": {
         "prefix": "Route::match",
         "body": [
-            "Route::match([${1:'get', 'post'}], '${2:/user/profile}', function() {",
+            "Route::match([${1:'get', 'post'}], '${2:/user/profile}', function () {",
             "    ${3://}",
             "});"
         ],
@@ -95,7 +95,7 @@
     "Route-put.sublime-snippet": {
         "prefix": "Route::put",
         "body": [
-            "Route::put('${1:users/\\{id\\}}', function(${2:$id}) {",
+            "Route::put('${1:users/{id\\}}', function (${2:$$id}) {",
             "    ${3://}",
             "});"
         ],

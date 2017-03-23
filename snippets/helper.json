@@ -146,7 +146,7 @@
     "Helper-array-sort.sublime-snippet": {
         "prefix": "Helper::array_sort",
         "body": [
-            "array_values(array_sort(${1:\\$array}, function(${2:\\$key}, ${3:\\$value}) {",
+            "array_values(array_sort(${1:\\$array}, function (${2:\\$key}, ${3:\\$value}) {",
             "    return ${3:\\$value}['${4:name}'];",
             "}));$5"
         ],
@@ -155,7 +155,7 @@
     "Helper-array-where.sublime-snippet": {
         "prefix": "Helper::array_where",
         "body": [
-            "array_where(${2:\\$array}, function(${3:\\$key}, ${4:\\$value}) {",
+            "array_where(${2:\\$array}, function (${3:\\$key}, ${4:\\$value}) {",
             "    return ${4:is_string(\\$value);}",
             "});$5"
         ],
