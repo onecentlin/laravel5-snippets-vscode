@@ -1,6 +1,6 @@
 # Laravel 5 Snippets
 
-[`Laravel 5 snippets` extension](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets) for Visual Studio Code.
+[`Laravel 5 snippets`](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets) extension for Visual Studio Code.
 
 ## Screenshot
 

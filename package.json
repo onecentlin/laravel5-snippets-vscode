@@ -2,7 +2,7 @@
     "name": "laravel5-snippets",
     "displayName": "Laravel 5 Snippets",
     "description": "Laravel 5 snippets for Visual Studio Code",
-    "version": "1.3.4",
+    "version": "1.4.0",
     "publisher": "onecentlin",
     "author": {
         "name": "Winnie Lin",
