@@ -419,5 +419,12 @@
             "url(${1:'foo/bar'}, ${2:\\$parameters}, ${3:\\$secure})$4"
         ],
         "description": "Generate a fully qualified URL to the given path."
+    },
+    "Helper-dd.sublime-snippet": {
+        "prefix": "Helper::dd",
+        "body": [
+            "dd($1);"
+        ],
+        "description": "Die and dump helper"
     }
 }
