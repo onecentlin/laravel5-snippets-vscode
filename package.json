@@ -2,7 +2,7 @@
     "name": "laravel5-snippets",
     "displayName": "Laravel 5 Snippets",
     "description": "Laravel 5 snippets for Visual Studio Code",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "publisher": "onecentlin",
     "author": {
         "name": "Winnie Lin",
@@ -121,6 +121,14 @@
             {
                 "language": "php",
                 "path": "./snippets/passport.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/str.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/broadcast.json"
             }
         ]
     }

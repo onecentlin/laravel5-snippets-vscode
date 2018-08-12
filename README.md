@@ -13,6 +13,7 @@ Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 ## Support Snippet Prefix
 
 * Auth
+* Broadcast
 * Cache
 * Config
 * Console
@@ -33,6 +34,7 @@ Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 * Schema - Contains `Schema::` and `Column::` prefix for database related settings
 * Session
 * Storage
+* Str
 * View
 
 > Blade - Please install [`Laravel Blade Snippets` extension](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade) for blade syntax highlighting and better support with blade and emmet.

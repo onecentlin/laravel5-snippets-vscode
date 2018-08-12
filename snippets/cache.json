@@ -86,5 +86,20 @@
             "});"
         ],
         "description": "Retrieve item or Store a default value permanently"
+    },
+    "Cache-lock-get": {
+        "prefix": "Cache::lock-get",
+        "body": "Cache::lock('${1:lock-name}', ${2:60})->get()",
+        "description": "obtaining arbitrary locks"
+    },
+    "Cache-lock-release": {
+        "prefix": "Cache::lock-release",
+        "body": "Cache::lock('${1:lock-name}')->release()",
+        "description": "release locks"
+    },
+    "Cache-lock-block": {
+        "prefix": "Cache::lock-block",
+        "body": "Cache::lock('${1:lock-name}', ${2:60})->block(${3:10})",
+        "description": "block until the lock becomes available"
     }
 }

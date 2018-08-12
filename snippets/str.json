@@ -1,0 +1,12 @@
+{
+    "Str-uuid": {
+        "prefix": "Str::uuid",
+        "body": "Str::uuid();",
+        "description": "UUID Methods"
+    },
+    "Str-orderedUuid": {
+        "prefix": "Str::orderedUuid",
+        "body": "Str::orderedUuid();",
+        "description": "UUID Methods"
+    }
+}

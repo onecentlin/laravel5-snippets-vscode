@@ -1,3 +1,16 @@
+## 1.5.0
+
+Support new snippets for Laravel 5.6
+
+* Add `Str::uuid` and `Str::orderedUuid`
+* Add `Broadcast::channel`
+
+Support new snippets for Laravel 5.5
+
+* Add `Route::redirect`
+* Add `Route::view`
+* Add `Cache::lock` with `get`, `release`, `block`
+
 ## 1.4.0
 
 * Add `Helper::dd` for `dd()` die and dump helper (#8)

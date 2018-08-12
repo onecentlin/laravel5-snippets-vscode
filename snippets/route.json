@@ -128,5 +128,15 @@
             "\\$router->pattern('${1:id}', '${2:[0-9]+}')$3"
         ],
         "description": "Set a global where pattern on all routes."
+    },
+    "Route-redirect": {
+        "prefix": "Route::redirect",
+        "body": "Route::redirect('${1:URI}', '${2:URI}', ${3:301});",
+        "description": "a convenient shortcut for performing a simple redirect"
+    },
+    "Route-view": {
+        "prefix": "Route::view",
+        "body": "Route::view('${1:URI}', '${2:viewName}');",
+        "description": "route only needs to return a view; you may provide an array of data to pass to the view as an optional third argument"
     }
 }
