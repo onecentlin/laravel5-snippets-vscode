@@ -1,3 +1,8 @@
+## 1.6.0
+
+* Added snippets for laravel collective form and html ([@mnshankar](https://github.com/mnshankar) - [PR #10](https://github.com/onecentlin/laravel5-snippets-vscode/pull/10))
+* Changed increments to bigIncrements ([@sidvanvliet](https://github.com/sidvanvliet) - [PR #15](https://github.com/onecentlin/laravel5-snippets-vscode/pull/15))
+
 ## 1.5.0
 
 Support new snippets for Laravel 5.6

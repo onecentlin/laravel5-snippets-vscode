@@ -21,7 +21,7 @@ Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 * Crypt
 * DB
 * Event
-* Form (Laravel Collective Form/Html needs to be installed)
+* Form ([Laravel Collective Form/Html](https://packagist.org/packages/laravelcollective/html) needs to be installed and available as `blade` snippets)
 * Hash
 * Helper
 * Log
