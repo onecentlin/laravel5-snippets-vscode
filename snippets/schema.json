@@ -5,7 +5,7 @@
         "prefix": "Schema::connection",
         "body": [
             "Schema::connection('${1:foo}')->create('${2:users}', function (${3:\\$table}) {",
-            "    \\$table->increments('id');$0",
+            "    \\$table->bigIncrements('id');$0",
             "});"
         ],
         "description": "Specify connection for schema operation"
@@ -14,7 +14,7 @@
         "prefix": "Schema::create-table",
         "body": [
             "Schema::create('${1:users}', function (Blueprint \\$table) {",
-            "    \\$table->increments('id');",
+            "    \\$table->bigIncrements('id');",
             "    $0",
             "    \\$table->timestamps();",
             "});"
