@@ -2,7 +2,7 @@
     "Cache-add.sublime-snippet": {
         "prefix": "Cache::add",
         "body": [
-            "Cache::add('${1:key}', ${2:\\$value}, ${3:\\$minutes});$4"
+            "Cache::add('${1:key}', ${2:\\$value}, ${3:\\$ttl});$4"
         ],
         "description": "Store an item in the Cache if it doesn't exist."
     },
@@ -65,14 +65,14 @@
     "Cache-put.sublime-snippet": {
         "prefix": "Cache::put",
         "body": [
-            "Cache::put('${1:key}', ${2:\\$value}, ${3:\\$minutes});$4"
+            "Cache::put('${1:key}', ${2:\\$value}, ${3:\\$ttl});$4"
         ],
-        "description": "Store an item in the Cache (key, value, minutes)"
+        "description": "Store an item in the Cache (key, value, ttl)"
     },
     "Cache-remember.sublime-snippet": {
         "prefix": "Cache::remember",
         "body": [
-            "Cache::remember('${1:key}', ${2:\\$minutes}, function () {",
+            "Cache::remember('${1:key}', ${2:\\$ttl}, function () {",
             "    $3",
             "});"
         ],
