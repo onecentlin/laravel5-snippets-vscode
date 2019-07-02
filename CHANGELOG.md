@@ -1,3 +1,7 @@
+## 1.7.0
+
+* Update Cache parameters using ttl instead of minutes ([@nicoeg](https://github.com/nicoeg)) - [PR #16](https://github.com/onecentlin/laravel5-snippets-vscode/pull/16)
+
 ## 1.6.0
 
 * Added snippets for laravel collective form and html ([@mnshankar](https://github.com/mnshankar) - [PR #10](https://github.com/onecentlin/laravel5-snippets-vscode/pull/10))
