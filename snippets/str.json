@@ -11,7 +11,7 @@
     },
     "Str-plural": {
       "prefix":"Str::plural",
-      "body": "Str::plural(${1:\\$string},${2:\\value});",
+      "body": "Str::plural('${1:\\string}',${2:\\$value});",
       "description": "Converts a string to its plural form"
     }
 }
