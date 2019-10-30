@@ -11,12 +11,12 @@
     },
     "Str-plural": {
       "prefix":"Str::plural",
-      "body": "Str::plural('${1:\\string}',${2:\\$value});",
+      "body": "Str::plural('${1:string}',${2:\\$value});",
       "description": "Converts a string to its plural form"
     },
     "Str-limit": {
       "prefix":"Str::limit",
-      "body": "Str::limit('${1:\\string}',${2:\\$length});",
+      "body": "Str::limit('${1:string}',${2:\\$length});",
       "description": "Truncates the given string at the specified length"
     }
 }
