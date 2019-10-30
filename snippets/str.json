@@ -8,5 +8,10 @@
         "prefix": "Str::orderedUuid",
         "body": "Str::orderedUuid();",
         "description": "UUID Methods"
+    },
+    "Str-plural": {
+      "prefix":"Str::plural",
+      "body": "Str::plural(${1:\\$string},${2:\\value});",
+      "description": "Converts a string to its plural form"
     }
 }
