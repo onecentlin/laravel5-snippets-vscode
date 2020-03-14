@@ -47,6 +47,16 @@
         ],
         "description": "Basic Delete Route."
     },
+    "Route-dispatch": {
+        "prefix": "Route::dispatch",
+        "body": "Route::dispatch(${1:\\$request});",
+        "description": "Dispatch the request to the application."
+    },
+    "Route-dispatchToRoute": {
+        "prefix": "Route::dispatchToRoute",
+        "body": "Route::dispatchToRoute(${1:\\$request});",
+        "description": "Dispatch the request to a route and return the response."
+    },
     "Route-get.sublime-snippet": {
         "prefix": "Route::get",
         "body": [
