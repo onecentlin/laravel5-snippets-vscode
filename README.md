@@ -1,6 +1,9 @@
-# Laravel 5 Snippets
+# Laravel Snippets
 
-[`Laravel 5 snippets`](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets) extension for Visual Studio Code.
+[`Laravel snippets`](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets) extension for Visual Studio Code (Support Laravel 5 and above version).
+- Laravel 5.x
+- Laravel 6.x
+- Laravel 7.x
 
 ## Screenshot
 

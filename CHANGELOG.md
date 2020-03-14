@@ -1,3 +1,10 @@
+## 1.8.0
+
+* Add `Str::plural` and `Str::limit` ([@wdog](https://github.com/wdog) - [PR #19](https://github.com/onecentlin/laravel5-snippets-vscode/pull/19))
+* Fix syntax error View ::makeCompact ([#17](https://github.com/onecentlin/laravel5-snippets-vscode/issues/17))
+* Add `Route::dispatch` and `Route::dispatchToRoute` ([#12](https://github.com/onecentlin/laravel5-snippets-vscode/issues/12))
+* Rename VS Code extension name to `Laravel Snippets` in order to support for Laravel 5 and above version.
+
 ## 1.7.0
 
 * Update Cache parameters using ttl instead of minutes ([@nicoeg](https://github.com/nicoeg)) - [PR #16](https://github.com/onecentlin/laravel5-snippets-vscode/pull/16)
@@ -22,8 +29,8 @@ Support new snippets for Laravel 5.5
 
 ## 1.4.0
 
-* Add `Helper::dd` for `dd()` die and dump helper (#8)
-* Fix response format (#5)
+* Add `Helper::dd` for `dd()` die and dump helper ([#8](https://github.com/onecentlin/laravel5-snippets-vscode/issues/8))
+* Fix response format ([#5](https://github.com/onecentlin/laravel5-snippets-vscode/issues/5))
 
 ## 1.3.4
 

@@ -1,8 +1,8 @@
 {
     "name": "laravel5-snippets",
-    "displayName": "Laravel 5 Snippets",
-    "description": "Laravel 5 snippets for Visual Studio Code",
-    "version": "1.7.0",
+    "displayName": "Laravel Snippets",
+    "description": "Laravel snippets for Visual Studio Code  (Support Laravel 5 and above)",
+    "version": "1.8.0",
     "publisher": "onecentlin",
     "author": {
         "name": "Winnie Lin",
@@ -22,7 +22,10 @@
     },
     "keywords": [
         "laravel",
-        "snippet"
+        "snippet",
+        "laravel5",
+        "laravel6",
+        "laravel7"
     ],
     "icon": "images/icon.png",
     "galleryBanner": {
