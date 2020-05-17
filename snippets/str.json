@@ -1,4 +1,19 @@
 {
+    "Str-after": {
+      "prefix": "Str::after",
+      "body": "Str::after('This is my name', 'This is');",
+      "description": "The Str::after method returns everything after the given value in a string. The entire string will be returned if the value does not exist within the string."
+    },
+    "Str-afterLast": {
+      "prefix": "Str::afterLast",
+      "body": "Str::afterLast('App\\Http\\Controllers\\Controller', '\\');",
+      "description": "The Str::afterLast method returns everything after the last occurrence of the given value in a string. The entire string will be returned if the value does not exist within the string."
+    },
+    "Str-ascii": {
+      "prefix": "Str::ascii",
+      "body": "Str::ascii('û');",
+      "description": "The Str::ascii method will attempt to transliterate the string into an ASCII value."
+    },
     "Str-uuid": {
         "prefix": "Str::uuid",
         "body": "Str::uuid();",
