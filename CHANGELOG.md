@@ -1,3 +1,8 @@
+## 1.9.0
+
+* Sync `Str` api to Laravel v7.x
+* Add `Str::after`, `Str::afterLast`, `Str::ascii` ([@gentritabazi01](https://github.com/gentritabazi01) - [PR #22](https://github.com/onecentlin/laravel5-snippets-vscode/pull/22))
+
 ## 1.8.0
 
 * Add `Str::plural` and `Str::limit` ([@wdog](https://github.com/wdog) - [PR #19](https://github.com/onecentlin/laravel5-snippets-vscode/pull/19))
