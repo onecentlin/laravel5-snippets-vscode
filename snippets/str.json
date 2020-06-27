@@ -34,6 +34,11 @@
       "body": "Str::contains(${1:\\$haystack}, '${2:needles}')",
       "description": "Return boolean. Determine if a given string contains a given substring."
     },
+    "Str-containsAll": {
+      "prefix": "Str::containsAll",
+      "body": "Str::containsAll(${1:\\$haystack}, '${2:needles}')",
+      "description": "Determine if a given string contains all array values. (v5.8)"
+    }, 
     "Str-endsWith": {
       "prefix": "Str::endsWith",
       "body": "Str::endsWith(${1:\\$haystack}, '${2:needles}')",
@@ -61,7 +66,7 @@
     },
     "Str-limit": {
       "prefix":"Str::limit",
-      "body": "Str::limit(${1:\\$string}, ${2:\\$length}, '${3:...}')",
+      "body": "Str::limit(${1:\\$string}, ${2:\\$limit}, '${3:...}')",
       "description": "Truncates the given string at the specified length"
     },
     "Str-lower": {
@@ -71,7 +76,7 @@
     },
     "Str-words": {
       "prefix": "Str::words",
-      "body": "Str::words(${1:\\$value}, ${2:\\$length}, '${3:...}')",
+      "body": "Str::words(${1:\\$value}, ${2:\\$words}, '${3:...}')",
       "description": "Limit the number of words in a string."
     },
     "Str-parseCallback": {
@@ -81,8 +86,13 @@
     },
     "Str-plural": {
       "prefix":"Str::plural",
-      "body": "Str::plural(${1:\\$string}, ${2:\\$value})",
-      "description": "Converts a string to its plural form"
+      "body": "Str::plural(${1:\\$value}, ${2:\\$count})",
+      "description": "Get the plural form of an English word."
+    },
+    "Str-pluralStudly": {
+      "prefix":"Str::pluralStudly",
+      "body": "Str::pluralStudly(${1:\\$value}, ${2:\\$count})",
+      "description": "Pluralize the last word of an English, studly caps case string. (v5.8)"
     },
     "Str-random": {
       "prefix": "Str::random",
