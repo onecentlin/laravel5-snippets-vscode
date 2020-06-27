@@ -1,4 +1,9 @@
 {
+    "Str-of": {
+      "prefix": "Str::of",
+      "body": "Str::of(${1:\\$string})",
+      "description": "Get a new stringable object from the given string. (v7.x)"
+    },
     "Str-after": {
       "prefix": "Str::after",
       "body": "Str::after(${1:\\$subject}, '${2:search}')",
@@ -53,6 +58,11 @@
       "prefix": "Str::is",
       "body": "Str::is(${1:\\$pattern}, '${2:value}')",
       "description": "Return boolean. Determine if a given string matches a given pattern."
+    },
+    "Str-isAscii": {
+      "prefix": "Str::isAscii",
+      "body": "Str::isAscii(${1:\\$value})",
+      "description": "Determine if a given string is 7 bit ASCII. (v7.x)"
     },
     "Str-isUuid": {
       "prefix": "Str::isUuid",
@@ -164,6 +174,11 @@
       "body": "Str::substr(${1:\\$string}, ${2:\\$start}, ${3:\\$length})",
       "description": "Returns the portion of string specified by the start and length parameters."
     },
+    "Str-substrCount": {
+      "prefix": "Str::substrCount",
+      "body": "Str::substrCount(${1:\\$haystack}, ${2:\\$needle}, ${3:\\$offset}, ${4:\\$length})",
+      "description": "Returns the number of substring occurrences. (v7.x)"
+    },
     "Str-ucfirst": {
       "prefix": "Str::ucfirst",
       "body": "Str::ucfirst(${1:\\$string})",
@@ -181,7 +196,7 @@
     },
     "Str-createUuidsUsing": {
       "prefix": "Str::createUuidsUsing",
-      "body": "Str::createUuidsUsing(${1:callback})",
+      "body": "Str::createUuidsUsing(${1:callable})",
       "description": "void. Set the callable that will be used to generate UUIDs. (v6.x)"
     }, 
     "Str-createUuidsNormally": {
