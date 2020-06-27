@@ -54,6 +54,11 @@
       "body": "Str::is(${1:\\$pattern}, '${2:value}')",
       "description": "Return boolean. Determine if a given string matches a given pattern."
     },
+    "Str-isUuid": {
+      "prefix": "Str::isUuid",
+      "body": "Str::isUuid(${1:\\$value})",
+      "description": "Return boolean. Determine if a given string is a valid UUID. (v6.x)"
+    },
     "Str-kebab": {
       "prefix": "Str::kebab",
       "body": "Str::kebab(${1:\\$value})",
@@ -173,5 +178,15 @@
         "prefix": "Str::orderedUuid",
         "body": "Str::orderedUuid()",
         "description": "Generate a time-ordered UUID (version 4)."
+    },
+    "Str-createUuidsUsing": {
+      "prefix": "Str::createUuidsUsing",
+      "body": "Str::createUuidsUsing(${1:callback})",
+      "description": "void. Set the callable that will be used to generate UUIDs. (v6.x)"
+    }, 
+    "Str-createUuidsNormally": {
+      "prefix": "Str::createUuidsNormally",
+      "body": "Str::createUuidsNormally()",
+      "description": "void. Indicate that UUIDs should be created normally and not using a custom factory. (v6.x)"
     }
 }
