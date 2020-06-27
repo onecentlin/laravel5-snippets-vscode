@@ -29,6 +29,11 @@
       "body": "Str::beforeLast(${1:\\$subject}, '${2:search}')",
       "description": "Get the portion of a string before the last occurrence of a given value. (v6.x)"
     },
+    "Str-between": {
+      "prefix": "Str::between",
+      "body": "Str::between(${1:\\$subject}, '${2:from}', '${3:to}');",
+      "description": "Get the portion of a string between two given values. (v7.x)"
+    },
     "Str-camel": {
       "prefix": "Str::camel",
       "body": "Str::camel(${1:\\$value})",
