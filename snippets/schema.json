@@ -124,7 +124,7 @@
     "table-decimal.sublime-snippet": {
         "prefix": "Column::decimal",
         "body": [
-            "\\$table->double('${1:amount}', ${2:5}, ${3:2})${4:->nullable()}${5:->default(${6:123.45})};$0"
+            "\\$table->decimal('${1:amount}', ${2:5}, ${3:2})${4:->nullable()}${5:->default(${6:123.45})};$0"
         ],
         "description": "DECIMAL equivalent with a precision and scale"
     },
