@@ -1,3 +1,9 @@
+## 1.10.0
+
+* Fix `Column::decimal` ([@dittoex](https://github.com/dittoex) - [PR #24](https://github.com/onecentlin/laravel5-snippets-vscode/pull/24))
+* Update helper snippets
+* Add `Helper::dd`
+
 ## 1.9.0
 
 * Sync `Str` api to Laravel v7.x
