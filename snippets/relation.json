@@ -2,7 +2,7 @@
     "Relation-belongsTo.sublime-snippet": {
         "prefix": "Relation::belongsTo",
         "body": [
-            "public function ${1:user}()",
+            "public function ${1:user}(): BelongsTo",
             "{",
             "    return \\$this->belongsTo('${2:App\\User}'${3:, '${4:foreign_key}'}${5:, '${6:other_key}'});",
             "}$7"
@@ -12,7 +12,7 @@
     "Relation-belongsToMany.sublime-snippet": {
         "prefix": "Relation::belongsToMany",
         "body": [
-            "public function ${1:roles}()",
+            "public function ${1:roles}(): BelongsToMany",
             "{",
             "    return \\$this->belongsToMany('${2:App\\Role}'${3:, '${4:role_user_table}'}${5:, '${6:user_id}'}${7:, '${8:role_id}'});",
             "}$9"
@@ -22,7 +22,7 @@
     "Relation-hasMany.sublime-snippet": {
         "prefix": "Relation::hasMany",
         "body": [
-            "public function ${1:comments}()",
+            "public function ${1:comments}(): HasMany",
             "{",
             "    return \\$this->hasMany('${2:App\\Comment}'${3:, '${4:foreign_key}'}${5:, '${6:local_key}'});",
             "}$7"
@@ -32,7 +32,7 @@
     "Relation-hasManyThrough.sublime-snippet": {
         "prefix": "Relation::hasManyThrough",
         "body": [
-            "public function ${1:comments}()",
+            "public function ${1:comments}(): HasManyThrough",
             "{",
             "    return \\$this->hasManyThrough('${2:App\\Comment}', ${3:App\\Post});",
             "}$4"
@@ -42,7 +42,7 @@
     "Relation-hasOne.sublime-snippet": {
         "prefix": "Relation::hasOne",
         "body": [
-            "public function ${1:user}()",
+            "public function ${1:user}(): HasOne",
             "{",
             "    return \\$this->hasOne('${2:App\\User}'${3:, '${4:foreign_key}'}${5:, '${6:local_key}'});",
             "}$7"
