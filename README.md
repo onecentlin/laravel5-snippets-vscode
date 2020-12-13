@@ -4,6 +4,7 @@
 - Laravel 5.x
 - Laravel 6.x
 - Laravel 7.x
+- Laravel 8.x
 
 ## Screenshot
 
