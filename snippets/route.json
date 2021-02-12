@@ -20,14 +20,14 @@
     "Route-controller.sublime-snippet": {
         "prefix": "Route::controller",
         "body": [
-            "Route::controller('${1:users}', '${2:UserController}');"
+            "Route::controller('${1:users}', [${2:UserController}::class]);"
         ],
         "description": "Route a controller to a URI with wildcard routing."
     },
     "Route-controllerAction.sublime-snippet": {
         "prefix": "Route::controllerAction",
         "body": [
-            "Route::${1:get}('${2:users/{id\\}}', '${3:$UserController@profile}');"
+            "Route::${1:get}('${2:users/{id\\}}', [${3:$UserController}::class, '${4:index}']);"
         ],
         "description": "Basic route to a controller action."
     },
@@ -78,8 +78,8 @@
     "Route-group.sublime-snippet": {
         "prefix": "Route::group",
         "body": [
-            "Route::group(${1:['${2:prefix}' => '${3:admin}']}, function () {",
-            "    $4",
+            "Route::prefix('${1:admin}')->group(function () {",
+            "    $2",
             "});"
         ],
         "description": "Create a Group of Routes"
@@ -87,8 +87,8 @@
     "Route-group-middleware": {
         "prefix": "Route::group-middleware",
         "body": [
-            "Route::group(['middleware' => ['${1:groupName}']], function () {",
-            "    $2",
+            "Route::middleware(['${1:auth}'${2:, '${3:second}'}])->group(function () {",
+            "    $4",
             "});"
         ],
         "description": "Create a Group of Routers with middleware defined in RouteServiceProvider"
@@ -114,7 +114,7 @@
     "Route-resource.sublime-snippet": {
         "prefix": "Route::resource",
         "body": [
-            "Route::resource('${1:user}', '${2:UserController}');"
+            "Route::resource('${1:user}', [${2:UserController}::class]);"
         ],
         "description": "Route to a RESTful Controller"
     },
@@ -128,7 +128,7 @@
     "Router-model.sublime-snippet": {
         "prefix": "Route::model",
         "body": [
-            "\\$router->model('${1:user}', '${2:App\\User}')$3"
+            "\\$router->model('${1:user}', '${2:App\\Models\\User}')$3"
         ],
         "description": "Register a model binder for a wildcard."
     },
