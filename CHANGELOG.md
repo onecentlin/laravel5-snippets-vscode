@@ -1,3 +1,8 @@
+## 1.11.0
+
+* Add relation return type ([@samir-araujo](https://github.com/samir-araujo) - [PR #27](https://github.com/onecentlin/laravel5-snippets-vscode/pull/27))
+* Route & Relation compatible with Laravel 8 ([@MrEduar](https://github.com/MrEduar) - [PR #30](https://github.com/onecentlin/laravel5-snippets-vscode/pull/30))
+
 ## 1.10.0
 
 * Fix `Column::decimal` ([@dittoex](https://github.com/dittoex) - [PR #24](https://github.com/onecentlin/laravel5-snippets-vscode/pull/24))
