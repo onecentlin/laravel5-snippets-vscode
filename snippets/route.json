@@ -27,7 +27,7 @@
     "Route-controllerAction.sublime-snippet": {
         "prefix": "Route::controllerAction",
         "body": [
-            "Route::${1:get}('${2:users/{id\\}}', [${3:$UserController}::class]);"
+            "Route::${1:get}('${2:users/{id\\}}', [${3:$UserController}::class, '${4:index}']);"
         ],
         "description": "Basic route to a controller action."
     },
