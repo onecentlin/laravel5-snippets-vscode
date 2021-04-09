@@ -20,16 +20,26 @@
     "Route-controller.sublime-snippet": {
         "prefix": "Route::controller",
         "body": [
-            "Route::controller('${1:users}', [${2:UserController}::class]);"
+            "Route::controller('${1:users}', '${2:UserController}');"
         ],
-        "description": "Route a controller to a URI with wildcard routing."
+        "description": "Route a controller to a URI with wildcard routing. (Deprecated)"
     },
     "Route-controllerAction.sublime-snippet": {
-        "prefix": "Route::controllerAction",
+        "prefix": "Route-controllerAction",
         "body": [
-            "Route::${1:get}('${2:users/{id\\}}', [${3:$UserController}::class, '${4:index}']);"
+            "Route::${1:get}('${2:users/{id\\}}', [${3:$User}Controller::class, '${4:index}'])->name('${5:user.index}');"
         ],
         "description": "Basic route to a controller action."
+    },
+    "Route-current": {
+        "prefix": "Route::current",
+        "body": "Route::current()",
+        "description": "Accessing current route; Return type: Illuminate\\Routing\\Route"
+    },
+    "Route-currentRouteName": {
+        "prefix": "Route::currentRouteName",
+        "body": "Route::currentRouteName()",
+        "description": "Accessing current route; Return type: string"
     },
     "Route-currentRouteAction.sublime-snippet": {
         "prefix": "Route::currentRouteAction",
@@ -74,6 +84,16 @@
             "});"
         ],
         "description": "Basic Post Route."
+    },
+    "Route-get-with-name": {
+        "prefix": "Route-get-name",
+        "body": "Route::get('${1:user}', '${2:User}Controller@${3:index}')->name('${4:user}');",
+        "description": "Get route with naming"
+    },
+    "Route-post-with-name": {
+        "prefix": "Route-post-name",
+        "body": "Route::post('${1:user}', '${2:User}Controller@${3:index}')->name('${4:user}');",
+        "description": "Post route with naming"
     },
     "Route-group.sublime-snippet": {
         "prefix": "Route::group",
