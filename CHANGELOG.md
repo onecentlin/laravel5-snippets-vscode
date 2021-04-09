@@ -1,3 +1,10 @@
+## 1.12.0
+
+* Add `Route-get-name`, `Route-post-name` for naming routes
+* Add `Route::current`, `Route::currentRouteName`
+* Update `Route-controllerAction` with naming route
+* Replace log message with double-quotes ([@MartinP7r](https://github.com/MartinP7r) - [PR #32](https://github.com/onecentlin/laravel5-snippets-vscode/pull/32))
+
 ## 1.11.0
 
 * Add relation return type ([@samir-araujo](https://github.com/samir-araujo) - [PR #27](https://github.com/onecentlin/laravel5-snippets-vscode/pull/27))
