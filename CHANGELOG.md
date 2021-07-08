@@ -1,3 +1,7 @@
+## 1.13.0
+
+* Fix `Route::resource` syntax issue ([#33](https://github.com/onecentlin/laravel5-snippets-vscode/issues/33))
+
 ## 1.12.0
 
 * Add `Route-get-name`, `Route-post-name` for naming routes

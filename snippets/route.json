@@ -134,7 +134,7 @@
     "Route-resource.sublime-snippet": {
         "prefix": "Route::resource",
         "body": [
-            "Route::resource('${1:user}', [${2:UserController}::class]);"
+            "Route::resource('${1:user}', ${2:User}Controller::class);"
         ],
         "description": "Route to a RESTful Controller"
     },
