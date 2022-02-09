@@ -31,6 +31,16 @@
         ],
         "description": "Basic route to a controller action."
     },
+    "Route-controller-group": {
+        "prefix": "Rotue-controller-group",
+        "body": [
+            "Route::controller(${1:Order}Controller::class)->group(function () {",
+            "    Route::get('/${2:orders}/{id}', 'show');",
+            "    Route::post('/${2:orders}', 'store');",
+            "});$3"
+        ],
+        "description": "Controller route groups (Laravel 9.x)"
+    },
     "Route-current": {
         "prefix": "Route::current",
         "body": "Route::current()",
