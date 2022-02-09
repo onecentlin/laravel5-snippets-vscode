@@ -1,10 +1,8 @@
 # Laravel Snippets
 
 [`Laravel snippets`](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets) extension for Visual Studio Code (Support Laravel 5 and above version).
-- Laravel 5.x
-- Laravel 6.x
-- Laravel 7.x
-- Laravel 8.x
+
+- Laravel 5.x-9.x
 
 ## Screenshot
 
@@ -24,6 +22,7 @@ Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 * Cookie
 * Crypt
 * DB
+* Eloquent
 * Event
 * Form ([Laravel Collective Form/Html](https://packagist.org/packages/laravelcollective/html) needs to be installed and available as `blade` snippets)
 * Hash

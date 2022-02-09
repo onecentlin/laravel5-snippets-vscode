@@ -1,3 +1,11 @@
+## 1.14.0
+
+[Laravel 9.x](https://laravel.com/docs/9.x/releases) new features
+
+* Add `Eloquent-attribute` for eloquent accessors / mutators
+* Add `Rotue-controller-group` for controller route groups
+* Add `Route-get-scopeBindings` and `Route-group-scopeBindings` for forcing scoping of route bindings
+
 ## 1.13.0
 
 * Fix `Route::resource` syntax issue ([#33](https://github.com/onecentlin/laravel5-snippets-vscode/issues/33))
