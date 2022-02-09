@@ -31,16 +31,6 @@
         ],
         "description": "Basic route to a controller action."
     },
-    "Route-controller-group": {
-        "prefix": "Rotue-controller-group",
-        "body": [
-            "Route::controller(${1:Order}Controller::class)->group(function () {",
-            "    Route::get('/${2:orders}/{id}', 'show');",
-            "    Route::post('/${2:orders}', 'store');",
-            "});$3"
-        ],
-        "description": "Controller route groups (Laravel 9.x)"
-    },
     "Route-current": {
         "prefix": "Route::current",
         "body": "Route::current()",
@@ -178,5 +168,36 @@
         "prefix": "Route::view",
         "body": "Route::view('${1:URI}', '${2:viewName}');",
         "description": "route only needs to return a view; you may provide an array of data to pass to the view as an optional third argument"
+    },
+
+    // Laravel 9.x
+
+    "Route-controller-group": {
+        "prefix": "Rotue-controller-group",
+        "body": [
+            "Route::controller(${1:Order}Controller::class)->group(function () {",
+            "    Route::get('/${2:orders}/{id}', 'show');",
+            "    Route::post('/${2:orders}', 'store');",
+            "});$3"
+        ],
+        "description": "Controller route groups (Laravel 9.x)"
+    },
+    "Route-get-scopeBindings": {
+        "prefix": "Route-get-scopeBindings",
+        "body": [
+            "Route::get('${1:/users/{user\\}/posts/{post\\}}', function (${2:User \\$user, Post \\$post}) {",
+            "    return ${3:\\$post};",
+            "})->scopeBindings();"
+        ],
+        "description": "Scope binding (Laravel 9.x)"
+    },
+    "Route-group-scopeBindings": {
+        "prefix": "Route-group-scopeBindings",
+        "body": [
+            "Route::scopeBindings()->group(function () {",
+            "   $1",
+            "});"
+        ],
+        "description": "Group scope binding (Laravel 9.x)"
     }
 }
