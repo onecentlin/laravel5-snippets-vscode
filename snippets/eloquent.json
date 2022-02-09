@@ -1,0 +1,15 @@
+{
+    "eloquent-attribute": {
+        "prefix": "Eloquent-attribute",
+        "body": [
+            "public function ${1:name}(): Attribute",
+            "{",
+            "    return new Attribute(",
+            "        get: fn ($$value) => ${2:strtoupper($$value)},",
+            "        set: fn ($$value) => ${3:$$value},",
+            "    );",
+            "}$4"
+        ],
+        "description": "Eloquent accessors / mutators (Laravel 9.x)"
+    }
+}

@@ -68,6 +68,10 @@
             },
             {
                 "language": "php",
+                "path": "./snippets/eloquent.json"
+            },
+            {
+                "language": "php",
                 "path": "./snippets/event.json"
             },
             {
