@@ -1,4 +1,22 @@
 {
+    "eloquent-getter": {
+        "prefix": "Eloquent-getter",
+        "body": [
+            "public function get${1:name}Attribute($$value) {",
+            "    return ${2:strtoupper($$value)};",
+            "}$3"
+        ],
+        "description": "Eloquent accessors (Laravel 8.x)"
+    }
+    "eloquent-setter": {
+        "prefix": "Eloquent-setter",
+        "body": [
+            "public function set${1:name}Attribute($$value) {",
+            "    $$this->attributes['${2:column}'] = ${3:$$value};",
+            "}$4"
+        ],
+        "description": "Eloquent accessors (Laravel 8.x)"
+    }
     "eloquent-attribute": {
         "prefix": "Eloquent-attribute",
         "body": [
