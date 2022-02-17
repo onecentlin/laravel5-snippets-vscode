@@ -178,7 +178,7 @@
             "Route::controller(${1:Order}Controller::class)->group(function () {",
             "    Route::get('/${2:orders}/{id}', 'show');",
             "    Route::post('/${2:orders}', 'store');",
-            "});$3"
+            "});"
         ],
         "description": "Controller route groups (Laravel 9.x)"
     },

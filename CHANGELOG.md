@@ -1,3 +1,8 @@
+## 1.15.0
+
+* Add `Eloquent-getter` and `Eloquent-setter` snippets ([@fabrola22](https://github.com/fabrola22) - [PR #36](https://github.com/onecentlin/laravel5-snippets-vscode/pull/36))
+* Fix snippets
+
 ## 1.14.0
 
 [Laravel 9.x](https://laravel.com/docs/9.x/releases) new features
