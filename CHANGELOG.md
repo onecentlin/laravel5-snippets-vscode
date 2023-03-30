@@ -1,3 +1,9 @@
+## 1.16.0
+
+- Add `Eloquent-attribute-make` snippet
+- Add `Arr::keyBy` snippet
+- Add `Str::betweenFirst` snippet
+
 ## 1.15.0
 
 * Add `Eloquent-getter` and `Eloquent-setter` snippets ([@fabrola22](https://github.com/fabrola22) - [PR #36](https://github.com/onecentlin/laravel5-snippets-vscode/pull/36))
