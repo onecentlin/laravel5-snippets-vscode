@@ -1,8 +1,20 @@
+## 1.17.0
+
+Support new snippets for Laravel v9.x
+
+* Add `Str::lcfirst` (v9.4)
+* Add `Str::wrap` (v9.5)
+* Add `Arr::join` (v9.11)
+* Add `Arr::map` (v9.13)
+* Fix typo
+
 ## 1.16.0
 
-- Add `Eloquent-attribute-make` snippet
-- Add `Arr::keyBy` snippet
-- Add `Str::betweenFirst` snippet
+Support new snippets for Laravel v9.2.0
+
+* Add `Eloquent-attribute-make`
+* Add `Arr::keyBy`
+* Add `Str::betweenFirst`
 
 ## 1.15.0
 
