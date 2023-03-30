@@ -31,13 +31,13 @@
     },
     "Str-between": {
       "prefix": "Str::between",
-      "body": "Str::between(${1:\\$subject}, '${2:from}', '${3:to}');",
+      "body": "Str::between(${1:\\$subject}, '${2:from}', '${3:to}')",
       "description": "Get the portion of a string between two given values. (v7.x)"
     },
     "Str-betweenFirst": {
       "prefix": "Str::betweenFirst",
-      "body": "Str::betweenFirst(${1:\\$subject}, '${2:from}', '${3:to}');",
-      "description": "Get the smallest possible portion of a string between two values. (v9.2.0)"
+      "body": "Str::betweenFirst(${1:\\$subject}, '${2:from}', '${3:to}')",
+      "description": "Get the smallest possible portion of a string between two values. (v9.2)"
     },
     "Str-camel": {
       "prefix": "Str::camel",
@@ -83,6 +83,11 @@
       "prefix": "Str::kebab",
       "body": "Str::kebab(${1:\\$value})",
       "description": "Convert a string to kebab case."
+    },
+    "Str-lcfirst": {
+      "prefix": "Str::lcfirst",
+      "body": "Str::lcfirst(${1:\\$value})",
+      "description": "Return string with first character lowercase. (v9.4)"
     },
     "Str-length": {
       "prefix": "Str::length",
@@ -213,5 +218,10 @@
       "prefix": "Str::createUuidsNormally",
       "body": "Str::createUuidsNormally()",
       "description": "void. Indicate that UUIDs should be created normally and not using a custom factory. (v6.x)"
+    },
+    "Str-wrap": {
+      "prefix": "Str::wrap",
+      "body": "Str::wrap(${1:\\$value}, ${2:\\$prefix}, ${3:\\$suffix})",
+      "description": "Wrap the given string in a HTML tag. (v9.5)"
     }
 }
