@@ -1,0 +1,7 @@
+{
+    "Arr-keyBy": {
+        "prefix": "Array::keyBy",
+        "body": "Arr::keyBy(${1:\\$array}, '${2:key}');",
+        "description": "Key an associative array by a field or using a callback (Laravel v9.2.0)"
+    }
+}
