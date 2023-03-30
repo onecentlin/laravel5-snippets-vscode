@@ -29,5 +29,18 @@
             "}"
         ],
         "description": "Eloquent accessors / mutators (Laravel 9.x)"
+    },
+    "eloquent-attribute-make": {
+        "prefix": "Eloquent-attribute-make",
+        "body": [
+            "public function ${1:name}(): Attribute",
+            "{",
+            "    return Attribute::make(",
+            "        get: fn (\\$value) => ${2:\\$value},",
+            "        set: fn (\\$value) => ${3:\\$value},",
+            "    );",
+            "}"
+        ],
+        "description": "Eloquent accessors / mutators (Laravel 9.x)"
     }
 }
