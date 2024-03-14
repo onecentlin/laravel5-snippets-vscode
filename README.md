@@ -30,6 +30,7 @@ Snippet prefix follows Laravel Facades. For example: `Request::`, `Route::`
 * Helper
 * Log
 * Mail - Contains `Mail::` and `Mailable::` prefix for mail related settings
+* Model - contains archived [Laravel Model](https://github.com/ahinkle/vscode-laravel-model-snippets) snippets
 * Passport (Laravel v5.3 - [API Authentication](https://laravel.com/docs/5.3/passport))
 * Redirect
 * Relation

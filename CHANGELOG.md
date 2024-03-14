@@ -1,3 +1,7 @@
+## 1.18.0
+
+* Add snippet for laravel model with `Model::` ([@tobinguyenn](https://github.com/tobinguyenn) - PR #41)
+
 ## 1.17.0
 
 Support new snippets for Laravel v9.x

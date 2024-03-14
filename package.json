@@ -2,7 +2,7 @@
     "name": "laravel5-snippets",
     "displayName": "Laravel Snippets",
     "description": "Laravel snippets for Visual Studio Code  (Support Laravel 5 and above)",
-    "version": "1.17.0",
+    "version": "1.18.0",
     "publisher": "onecentlin",
     "author": {
         "name": "Winnie Lin",
@@ -27,7 +27,9 @@
         "laravel6",
         "laravel7",
         "laravel8",
-        "laravel9"
+        "laravel9",
+        "laravel10",
+        "laravel11"
     ],
     "icon": "images/icon.png",
     "galleryBanner": {
@@ -94,6 +96,10 @@
             {
                 "language": "php",
                 "path": "./snippets/mail.json"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/model.json"
             },
             {
                 "language": "php",
