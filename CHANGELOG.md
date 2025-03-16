@@ -1,3 +1,7 @@
+## 1.18.1
+
+* Add missing "@" symbol for return type annotation ([@tobinguyenn](https://github.com/tobinguyenn) - PR #42)
+
 ## 1.18.0
 
 * Add snippet for laravel model with `Model::` ([@tobinguyenn](https://github.com/tobinguyenn) - PR #41)
