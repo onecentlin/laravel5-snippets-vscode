@@ -1,17 +1,227 @@
 {
-    "Arr-keyBy": {
-        "prefix": "Arr::keyBy",
-        "body": "Arr::keyBy(${1:\\$array}, '${2:key}')",
-        "description": "Key an associative array by a field or using a callback (Laravel v9.2)"
+    "Arr-accessible": {
+        "prefix": "Arr::accessible",
+        "body": "Arr::accessible(${1:\\$value})",
+        "description": "Determine whether the given value is array accessible"
+    },
+    "Arr-add": {
+        "prefix": "Arr::add",
+        "body": "Arr::add(${1:\\$array}, '${2:key}', ${3:\\$value})",
+        "description": "Add an element to an array using 'dot' notation if it doesn't exist"
+    },
+    "Arr-collapse": {
+        "prefix": "Arr::collapse",
+        "body": "Arr::collapse(${1:\\$array})",
+        "description": "Collapse an array of arrays into a single array"
+    },
+    "Arr-crossJoin": {
+        "prefix": "Arr::crossJoin",
+        "body": "Arr::crossJoin(...${1:\\$arrays})",
+        "description": "Cross join the given arrays, returning all possible permutations"
+    },
+    "Arr-divide": {
+        "prefix": "Arr::divide",
+        "body": "Arr::divide(${1:\\$array})",
+        "description": "Divide an array into two arrays. One with keys and the other with values"
+    },
+    "Arr-dot": {
+        "prefix": "Arr::dot",
+        "body": "Arr::dot(${1:\\$array}, '${2:prepend}')",
+        "description": "Flatten a multi-dimensional associative array with dots"
+    },
+    "Arr-undot": {
+        "prefix": "Arr::undot",
+        "body": "Arr::undot(${1:\\$array})",
+        "description": "Convert a flatten 'dot' notation array into an expanded array."
+    },
+    "Arr-except": {
+        "prefix": "Arr::except",
+        "body": "Arr::except(${1:\\$array}, ${2:\\$keys})",
+        "description": "Get all of the given array except for a specified array of keys"
+    },
+    "Arr-exists": {
+        "prefix": "Arr::exists",
+        "body": "Arr::exists(${1:\\$array}, '${2:key}')",
+        "description": "Determine if the given key exists in the provided array."
+    },
+    "Arr-first": {
+        "prefix": "Arr::first",
+        "body": "Arr::first(${1:\\$array}, ${2:\\$callback}, ${3:\\$default})",
+        "description": "Return the first element in an array passing a given truth test"
+    },
+    "Arr-last": {
+        "prefix": "Arr::last",
+        "body": "Arr::last(${1:\\$array}, ${2:\\$callback}, ${3:\\$default})",
+        "description": "Return the last element in an array passing a given truth test"
+    },
+    "Arr-flatten": {
+        "prefix": "Arr::flatten",
+        "body": "Arr::flatten(${1:\\$array}, ${2:\\$depth})",
+        "description": "Flatten a multi-dimensional array into a single level"
+    },
+    "Arr-forget": {
+        "prefix": "Arr::forget",
+        "body": "Arr::forget(${1:\\$array}, ${2:\\$keys})",
+        "description": "Remove one or many array items from a given array using 'dot' notation"
+    },
+    "Arr-get": {
+        "prefix": "Arr::get",
+        "body": "Arr::get(${1:\\$array}, '${2:key}', ${3:\\$default})",
+        "description": "Get an item from an array using 'dot' notation"
+    },
+    "Arr-has": {
+        "prefix": "Arr::has",
+        "body": "Arr::has(${1:\\$array}, ${2:\\$keys})",
+        "description": "Check if an item or items exist in an array using 'dot' notation"
+    },
+    "Arr-hasAny": {
+        "prefix": "Arr::hasAny",
+        "body": "Arr::hasAny(${1:\\$array}, ${2:\\$keys})",
+        "description": "Check if an item or items exist in an array using 'dot' notation"
+    },
+    "Arr-isAssoc": {
+        "prefix": "Arr::isAssoc",
+        "body": "Arr::isAssoc(${1:\\$array})",
+        "description": "Determine whether the given value is an associative array"
+    },
+    "Arr-isList": {
+        "prefix": "Arr::isList",
+        "body": "Arr::isList(${1:\\$array})",
+        "description": "Determines if an array is a list."
     },
     "Arr-join": {
         "prefix": "Arr::join",
-        "body": "Arr::join(${1:\\$array}, '${2:glue}')",
-        "description": "Join array elements with a string (Laravel v9.11)"
+        "body": "Arr::join(${1:\\$array}, '${2:glue}', '${3:finalGlue}')",
+        "description": "Join all items using a string. The final items can use a separate glue string."
+    },
+    "Arr-keyBy": {
+        "prefix": "Arr::keyBy",
+        "body": "Arr::keyBy(${1:\\$array}, '${2:keyBy}')",
+        "description": "Key an associative array by a field or using a callback (Laravel v9.2)"
+    },
+    "Arr-prependKeysWith": {
+        "prefix": "Arr::prependKeysWith",
+        "body": "Arr::prependKeysWith(${1:\\$array}, '${2:prependWith}')",
+        "description": "Prepend the key names of an associative array."
+    },
+    "Arr-only": {
+        "prefix": "Arr::only",
+        "body": "Arr::only(${1:\\$array}, ${2:\\$keys})",
+        "description": "Get a subset of the items from the given array"
+    },
+    "Arr-select": {
+        "prefix": "Arr::select",
+        "body": "Arr::select(${1:\\$array}, ${2:\\$keys})",
+        "description": "Select an array of values from an array."
+    },
+    "Arr-pluck": {
+        "prefix": "Arr::pluck",
+        "body": "Arr::pluck(${1:\\$array}, '${2:key}')",
+        "description": "Pluck an array of values from an array"
+    },
+    "Arr-explodePluckParameters": {
+        "prefix": "Arr::explodePluckParameters",
+        "body": "Arr::explodePluckParameters(${1:\\$value}, ${2:\\$key})",
+        "description": "Explode the 'value' and 'key' arguments passed to 'pluck'."
     },
     "Arr-map": {
         "prefix": "Arr::map",
         "body": "Arr::map(${1:\\$array}, ${2:\\$callback})",
-        "description": "Arr::map iterates through the array and passes each value and key to the given callback (Laravel v9.13)"
+        "description": "Run a map over each of the items in the array. (Laravel v9.13)"
+    },
+    "Arr-mapWithKeys": {
+        "prefix": "Arr::mapWithKeys",
+        "body": "Arr::mapWithKeys(${1:\\$array}, ${2:\\$callback})",
+        "description": "Run an associative map over each of the items."
+    },
+    "Arr-mapSpread": {
+        "prefix": "Arr::mapSpread",
+        "body": "Arr::mapSpread(${1:\\$array}, ${2:\\$callback})",
+        "description": "Run a map over each nested chunk of items."
+    },
+    "Arr-prepend": {
+        "prefix": "Arr::prepend",
+        "body": "Arr::prepend(${1:\\$array}, ${2:\\$value}, '${3:key}')",
+        "description": "Push an item onto the beginning of an array"
+    },
+    "Arr-pull": {
+        "prefix": "Arr::pull",
+        "body": "Arr::pull(${1:\\$array}, '${2:key}')",
+        "description": "Get a value from the array, and remove it"
+    },
+    "Arr-query": {
+        "prefix": "Arr::query",
+        "body": "Arr::query(${1:\\$array})",
+        "description": "Convert the array into a query string."
+    },
+    "Arr-random": {
+        "prefix": "Arr::random",
+        "body": "Arr::random(${1:\\$array}, ${2:\\$number})",
+        "description": "Get one or a specified number of random values from an array."
+    },
+    "Arr-set": {
+        "prefix": "Arr::set",
+        "body": "Arr::set(${1:\\$array}, '${2:key}', ${3:\\$value})",
+        "description": "Set an array item to a given value using 'dot' notation"
+    },
+    "Arr-Shuffle": {
+        "prefix": "Arr::shuffle",
+        "body": "Arr::shuffle(${1:\\$array})",
+        "description": "Shuffle the given array and return the result"
+    },
+    "Arr-sole": {
+        "prefix": "Arr::sole",
+        "body": "Arr::sole(${1:\\$array}, ${2:\\$callback})",
+        "description": "Get the first item in the collection, but only if exactly one item exists. Otherwise, throw an exception."
+    },
+    "Arr-sort": {
+        "prefix": "Arr::sort",
+        "body": "Arr::sort(${1:\\$array}, ${2:\\$callback})",
+        "description": "Sort the array using the given callback or 'dot' notation."
+    },
+    "Arr-sortDesc": {
+        "prefix": "Arr::sortDesc",
+        "body": "Arr::sortDesc(${1:\\$array}, ${2:\\$callback})",
+        "description": "Sort the array in descending order using the given callback or 'dot' notation."
+    },
+    "Arr-sortRecursive": {
+        "prefix": "Arr::sortRecursive",
+        "body": "Arr::sortRecursive(${1:\\$array})",
+        "description": "Recursively sort an array by keys and values."
+    },
+    "Arr-sortRecursiveDesc": {
+        "prefix": "Arr::sortRecursiveDesc",
+        "body": "Arr::sortRecursiveDesc(${1:\\$array})",
+        "description": "Recursively sort an array by keys and values in descending order."
+    },
+    "Arr-toCssStyles": {
+        "prefix": "Arr::toCssStyles",
+        "body": "Arr::toCssStyles(${1:\\$array})",
+        "description": "Conditionally compile styles from an array into a style list."
+    },
+    "Arr-where": {
+        "prefix": "Arr::where",
+        "body": "Arr::where(${1:\\$array}, ${2:\\$callback})",
+        "description": "Filter the array using the given callback."
+    },
+    "Arr-reject": {
+        "prefix": "Arr::reject",
+        "body": "Arr::reject(${1:\\$array}, ${2:\\$callback})",
+        "description": "Filter the array using the given callback."
+    },
+    "Arr-partition": {
+        "prefix": "Arr::partition",
+        "body": "Arr::partition(${1:\\$array}, ${2:\\$callback})",
+        "description": "Partition the array into two arrays using the given callback."
+    },
+    "Arr-whereNotNull": {
+        "prefix": "Arr::whereNotNull",
+        "body": "Arr::whereNotNull(${1:\\$array})",
+        "description": "Filter items in the array by a callback."
+    },
+    "Arr-wrap": {
+        "prefix": "Arr::wrap",
+        "body": "Arr::wrap(${1:\\$value})",
+        "description": "If the given value is not an array, wrap it in one."
     }
 }

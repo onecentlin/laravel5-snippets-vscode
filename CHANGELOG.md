@@ -1,3 +1,7 @@
+## 1.19.0
+
+* Update `Arr` snippets
+
 ## 1.18.1
 
 * Add missing "@" symbol for return type annotation ([@tobinguyenn](https://github.com/tobinguyenn) - PR #42)
