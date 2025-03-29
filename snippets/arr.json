@@ -54,6 +54,11 @@
         "body": "Arr::last(${1:\\$array}, ${2:\\$callback}, ${3:\\$default})",
         "description": "Return the last element in an array passing a given truth test"
     },
+    "Arr-take:": {
+        "prefix": "Arr::take",
+        "body": "Arr::take(${1:\\$array}, ${2:\\$limit})",
+        "description": "Take the first or last limit items from an array. (Laravel v10.x)"
+    },
     "Arr-flatten": {
         "prefix": "Arr::flatten",
         "body": "Arr::flatten(${1:\\$array}, ${2:\\$depth})",
@@ -92,7 +97,7 @@
     "Arr-join": {
         "prefix": "Arr::join",
         "body": "Arr::join(${1:\\$array}, '${2:glue}', '${3:finalGlue}')",
-        "description": "Join all items using a string. The final items can use a separate glue string."
+        "description": "Join all items using a string. The final items can use a separate glue string. (Laravel v9.x)"
     },
     "Arr-keyBy": {
         "prefix": "Arr::keyBy",
@@ -102,7 +107,7 @@
     "Arr-prependKeysWith": {
         "prefix": "Arr::prependKeysWith",
         "body": "Arr::prependKeysWith(${1:\\$array}, '${2:prependWith}')",
-        "description": "Prepend the key names of an associative array."
+        "description": "Prepend the key names of an associative array. (Laravel v9.x)"
     },
     "Arr-only": {
         "prefix": "Arr::only",
@@ -112,7 +117,7 @@
     "Arr-select": {
         "prefix": "Arr::select",
         "body": "Arr::select(${1:\\$array}, ${2:\\$keys})",
-        "description": "Select an array of values from an array."
+        "description": "Select an array of values from an array. (Laravel v10.x)"
     },
     "Arr-pluck": {
         "prefix": "Arr::pluck",
@@ -132,12 +137,12 @@
     "Arr-mapWithKeys": {
         "prefix": "Arr::mapWithKeys",
         "body": "Arr::mapWithKeys(${1:\\$array}, ${2:\\$callback})",
-        "description": "Run an associative map over each of the items."
+        "description": "Run an associative map over each of the items. (Laravel v10.x)"
     },
     "Arr-mapSpread": {
         "prefix": "Arr::mapSpread",
         "body": "Arr::mapSpread(${1:\\$array}, ${2:\\$callback})",
-        "description": "Run a map over each nested chunk of items."
+        "description": "Run a map over each nested chunk of items. (Laravel v11.x)"
     },
     "Arr-prepend": {
         "prefix": "Arr::prepend",
@@ -172,7 +177,7 @@
     "Arr-sole": {
         "prefix": "Arr::sole",
         "body": "Arr::sole(${1:\\$array}, ${2:\\$callback})",
-        "description": "Get the first item in the collection, but only if exactly one item exists. Otherwise, throw an exception."
+        "description": "Get the first item in the collection, but only if exactly one item exists. Otherwise, throw an exception. (Laravel v12.x)"
     },
     "Arr-sort": {
         "prefix": "Arr::sort",
@@ -182,7 +187,7 @@
     "Arr-sortDesc": {
         "prefix": "Arr::sortDesc",
         "body": "Arr::sortDesc(${1:\\$array}, ${2:\\$callback})",
-        "description": "Sort the array in descending order using the given callback or 'dot' notation."
+        "description": "Sort the array in descending order using the given callback or 'dot' notation. (Laravel v9.x)"
     },
     "Arr-sortRecursive": {
         "prefix": "Arr::sortRecursive",
@@ -192,12 +197,12 @@
     "Arr-sortRecursiveDesc": {
         "prefix": "Arr::sortRecursiveDesc",
         "body": "Arr::sortRecursiveDesc(${1:\\$array})",
-        "description": "Recursively sort an array by keys and values in descending order."
+        "description": "Recursively sort an array by keys and values in descending order. (Laravel v10.x)"
     },
     "Arr-toCssStyles": {
         "prefix": "Arr::toCssStyles",
         "body": "Arr::toCssStyles(${1:\\$array})",
-        "description": "Conditionally compile styles from an array into a style list."
+        "description": "Conditionally compile styles from an array into a style list. (Laravel v9.x)"
     },
     "Arr-where": {
         "prefix": "Arr::where",
@@ -207,12 +212,12 @@
     "Arr-reject": {
         "prefix": "Arr::reject",
         "body": "Arr::reject(${1:\\$array}, ${2:\\$callback})",
-        "description": "Filter the array using the given callback."
+        "description": "Filter the array using the given callback. (Laravel v11.x)"
     },
     "Arr-partition": {
         "prefix": "Arr::partition",
         "body": "Arr::partition(${1:\\$array}, ${2:\\$callback})",
-        "description": "Partition the array into two arrays using the given callback."
+        "description": "Partition the array into two arrays using the given callback. (Laravel v12.x)"
     },
     "Arr-whereNotNull": {
         "prefix": "Arr::whereNotNull",

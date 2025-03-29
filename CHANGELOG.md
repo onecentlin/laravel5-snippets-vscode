@@ -1,3 +1,7 @@
+## 1.19.1
+
+* Add `Arr::take`
+
 ## 1.19.0
 
 * Update `Arr` snippets
